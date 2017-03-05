@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css"  href="css/new.css">
+    <title>HTML Academy: Мишка</title>
+  </head>
+
+    <header class="page-header">
+      <div class="page-header__top-section">
+        <div class="page-header__logo">
+          <img src="http://placehold.it/150x100">
+        </div>
+        <nav class="main-nav">
+          <button class="main-nav__trigger" type="button"></button>
+        </nav>
+      </div>
+
+    </header>
+    <main class="main">
+      <section class="custom-order">
+        <h2 class="custom-order__title">Вязание на заказ</h2>
+        <p class="custom-order__description">Мы будем рады воплотить в эизнь ваши пожелания! Заполните
+          простую форму заказа, и мы свяжемся с вами, что бы уточнить детали.</p>
+        <form class="custom-order__from"  action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="custom-order__group">
+            <legend class="custom-order__group-title">Тип</legend>
+
+
+            <input class="custom-order__radio" type="radio" name="order-type" id="home-decor" value="home-decor" checked>
+            <label class="custom-order__label" for="home-decor">Аксессуар для дома</label>
+
+            <input class="custom-order__label" type="radio" name="order-type" id="toy" value="toy">
+            <label class="custom-order__radio" for="toy">Детская игрушка</label>
+          </fieldset>
+
+          <fieldset class="custom-order__group">
+            <legend class="custom-order__group-title">Цвет</legend>
+
+            <input class="custom-order__checkbox" type="checkbox" name="white" value="white" id="white" checked>
+            <label class="custom-order__label" for="white">Белый</label>
+
+
+            <input class="custom-order__checkbox" type="checkbox" name="gray" value="gray" id="gray" checked>
+            <label class="custom-order__label"  for="gray">Серый</label>
+
+
+            <input class="custom-order__checkbox" type="checkbox" name="tiffany" value="tiffany" id="tiffany" >
+            <label class="custom-order__label"  for="tiffany">Тиффани</label>
+
+            <input class="custom-order__checkbox" type="checkbox" name="black" value="black" id="black" >
+            <label class="custom-order__label"  for="black">Черный</label>
+
+
+            <input class="custom-order__checkbox" type="checkbox" name="pink" value="pink" id="pink" >
+            <label class="custom-order__label"  for="pink">Розовый</label>
+
+            <input class="custom-order__checkbox" type="checkbox" name="oranage" value="oranage" id="oranage" >
+            <label class="custom-order__label" for="oranage">Оранжевый</label>
+          </fieldset>
+
+          <fieldset class="custom-order__group">
+            <legend class="custom-order__group-title">ФИО</legend>
+
+            <label class="custom-order__label" for="name">Имя:</label>
+            <input class="custom-order__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+
+            <label class="custom-order__label" for="surname">Фамилия:</label>
+            <input class="custom-order__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+
+            <label class="custom-order__label" for="patronymic">Отчество:</label>
+            <input class="custom-order__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+          </fieldset>
+
+          <fieldset class="custom-order__group">
+            <legend class="custom-order__group-title">Тел</legend>
+
+            <input type="tel" class="custom-order__text custom-order__text--tel" name="tel" pattern="[\+]7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX*" required></input>
+           </fieldset>
+
+          <fieldset class="custom-order__group">
+            <legend class="custom-order__group-title">e-mail</legend>
+
+            <input type="email" class="custom-order__text custom-order__text--email" name="email" placeholder="Ваш Email*" required></input>
+          </fieldset>
+
+          <fieldset class="custom-order__group">
+            <legend class="custom-order__group-title">Доп</legend>
+
+            <textarea name="addition" rows=8 placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <p class="custom_order__notice">* - поля обязаельные к заполнению</p>
+          <button class="custom_order__submit-button" type="submit">отправить заказ</button>
+        </form>
+
+
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social-links">
+        <a href="#" class="page-footer__social-link page-footer__social-link-in"></a>
+        <a href="#" class="page-footer__social-link page-footer__social-link-fb"></a>
+        <a href="#" class="page-footer__social-link page-footer__social-link-tw"></a>
+      </div>
+      <div class="page-footer__copyright">
+        <p class="page-footer__text">Разработано:</p>
+        <a class="page-footer__logo" href="#"><img src="http://placehold.it/150x100"></a>
+      </div>
+    </footer>
+  </body>
+</html>
+
