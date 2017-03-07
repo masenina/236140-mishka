@@ -7,8 +7,8 @@
 <body>
 <header class="page-header">
   <div class="page-header__top-section">
-    <a class="page-header__logo">
-      <img src="http://placehold.it/86x35" alt="Мишка">
+    <a class="page-header__logo" href="index.html">
+      <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__trigger" type="button"></button>
@@ -26,15 +26,13 @@
     </div>
     <ul class="page-header__groups">
       <li class="page-header__groups page-headers__group--home">
-        <a href="#">
-          <span class="page-header__group-title">Предметы</span>
-          <span class="page-header__group-title">интерьера</span>
+        <a class="page-header__group-title" href="#">
+          Предметы интерьера
         </a>
       </li>
       <li class="page-header__groups page-headers__groups--toys">
-        <a href="#">
-          <span class="page-header__group-title"> Детские</span>
-          <span class="page-header__group-title">игрушки</span>
+        <a class="page-header__group-title" href="#">
+          Детские игрушки
         </a>
       </li>
     </ul>
@@ -62,7 +60,7 @@
         </tr>
       </table>
       <div class="product-item__image">
-        <img  src="http://placehold.it/260x315" alt="Вязаные Корзинки">
+        <img  src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные Корзинки">
       </div>
       <div class="product-item__price">
         <p>Цена: 990 руб.</p>
@@ -76,37 +74,37 @@
     <ul class="about-us__items">
       <li class="about-us__item">
         <div class="about-us__image about-us__image--flower">
-          <img src="http://placehold.it/33x38" alt="Экология">
+          <img src="http://placehold.it/33x38" width="33" height="38" alt="Экология">
         </div>
         <p class="about-us__text">Экологически чистые материалы</p>
       </li>
       <li class="about-us__item">
         <div class="about-us__image about-us__image--money">
-          <img src="http://placehold.it/33x38" alt="Стиль">
+          <img src="http://placehold.it/33x38" width="33" height="38" alt="Стиль">
         </div>
         <p class="about-us__text">Скандинавский стиль по российской цене</p>
       </li>
       <li class="about-us__item">
         <div class="about-us__image about-us__image--heart">
-          <img src="http://placehold.it/33x38" alt="Лайки">
+          <img src="http://placehold.it/33x38" width="33" height="38" alt="Лайки">
         </div>
         <p class="about-us__text">Увеличивает лайки на фотографиях</p>
       </li>
       <li class="about-us__item">
         <div class="about-us__image about-us__image--ball">
-          <img src="http://placehold.it/33x38" alt="Любовь">
+          <img src="http://placehold.it/33x38" width="33" height="38" alt="Любовь">
         </div>
         <p class="about-us__text">Связано вручную с любовью и умилением</p>
       </li>
       <li class="about-us__item">
         <div class="about-us__image about-us__image--rocket">
-          <img src="http://placehold.it/33x38" alt="Российский производитель">
+          <img src="http://placehold.it/33x38" width="33" height="38" alt="Российский производитель">
         </div>
         <p class="about-us__text">Поддержка отечественного производителя</p>
       </li>
       <li class="about-us__item">
         <div class="about-us__image about-us__image--box">
-          <img src="http://placehold.it/33x38" alt="Упаковка">
+          <img src="http://placehold.it/33x38" width="33" height="38" alt="Упаковка">
         </div>
         <p class="about-us__text">Поставляется в подарочной упаковке</p>
       </li>
@@ -141,7 +139,7 @@
       </tr>
     </table>
     <div class="contacts__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5878811170714!2d30.323025104719807!3d59.93898040140226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1488797326049" width="320px" height="457px"> </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5878811170714!2d30.323025104719807!3d59.93898040140226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1488797326049" width="320" height="457"> </iframe>
     </div>
     <a class="contacts__feedback btn" href="#">Напишите нам</a>
   </section>
@@ -155,14 +153,14 @@
   </div>
   <div class="page-footer__copyright">
     <p class="page-footer__text">Разработано:</p>
-    <a class="page-footer__logo" href="#"><img src="http://placehold.it/27x34" alt="HTML Academy"></a>
+    <a class="page-footer__logo" href="#"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a>
   </div>
 </footer>
 
 <div class="modal">
   <form class="modal__form" method="POST">
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <h3 class="modal__text">Выберите размер:</h3>
+    <div class="modal__title">Добавить в корзину</div>
+    <div class="modal__text">Выберите размер:</div>
     <fieldset class="modal__radio-group">
       <input class="modal__radio" type="radio" name="size" id="size_small" value="small">
       <label class="modal__label" for="size_small">S</label>
