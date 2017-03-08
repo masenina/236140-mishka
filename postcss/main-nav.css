@@ -1,0 +1,26 @@
+.main-nav {
+
+}
+
+.main-nav__trigger{
+background: url("/img/icon-menu-open.svg") no-repeat 50% 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.main-nav__menu{
+  padding: 0px;
+  display: none;
+}
+
+.main-nav__menu-item {
+  width: 320px;
+  height:50px;
+  background-color: #3bff46;
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+
+  }
+}

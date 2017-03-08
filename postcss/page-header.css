@@ -1,0 +1,29 @@
+
+.page-header__main-section{
+  height:300px;
+  background: #fafafa url("../img/hero-mobile@1x.jpg") no-repeat;
+}
+
+.page-header__caption{
+  font-size: 24px;
+}
+
+.page-header__groups{
+  list-style-type: none;
+  padding: 0;
+}
+
+.page-header__group{
+  background: lightseagreen no-repeat 100% 0;
+  height: 70px;
+  &--home{
+    background-image: url("/img/icon-interior.svg");
+  }
+  &--toys{
+    background-image: url("/img/icon-toy.svg");
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}

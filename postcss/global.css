@@ -1,0 +1,10 @@
+body{
+  font-family: "Comic Sans MS";
+}
+
+.btn{
+  border: 1px solid darkslategray;
+  text-decoration: none;
+  color: darkslategray;
+
+}
