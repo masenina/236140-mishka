@@ -1,0 +1,10 @@
+.producing__title{
+  font-size: 19px;
+  font-weight: bold;
+  background: url("/img/icon-video.svg") no-repeat left center;
+}
+
+.producing__video-description{
+  font-size: 13px;
+  color: $base-text-color-light;
+}

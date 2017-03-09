@@ -1,8 +1,12 @@
 @for $i from 1 to 6 {
   .about-us__image--$i {
     background-image: url("/img/icon-feature-$(i).svg");
-
   }
+}
+
+.about-us__title{
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .about-us__image{
@@ -13,10 +17,17 @@
   background-size: contain;
   background-position: 50% 50%;
 }
+
 .about-us__items{
   padding: 0;
 }
+
 .about-us__item{
   list-style-type: none;
+}
+
+.about-us__text{
+  font-size: 17px;
+  font-weight: bold;
 }
 

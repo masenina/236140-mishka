@@ -1,0 +1,36 @@
+.custom-order__group{
+  border: 0px;
+  border-top: 1px solid $form-color;
+}
+
+.custom-order__group-title{
+  font-size: 17px;
+  font-weight: bold;
+  color: $form-color;
+  text-transform: uppercase;
+}
+
+.custom-order__label{
+  font-size: 17px;
+  font-weight: bold;
+  &--active:hover{
+    color: $base-color-hover;
+  }
+  &--active:active{
+    color: $base-color-down;
+  }
+}
+
+.custom-order__text{
+  border: 0;
+  border-bottom: 1px solid $base-color-dark;
+}
+
+.custom-order__textarea{
+  border: 1px solid $base-color-dark;
+}
+
+.custom-order__notice{
+  font-size: 14px;
+  color: $base-text-color-light;
+}

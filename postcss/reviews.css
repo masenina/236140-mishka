@@ -1,0 +1,28 @@
+.reviews__title{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.reviews__item{
+  margin: 0;
+}
+
+.reviews__arrow-btn{
+  &--prev{
+    background: url("/img/icon-left-arrow.svg") no-repeat 50% 50%;
+  }
+
+  &--next{
+    background: url("/img/icon-right-arrow.svg") no-repeat 50% 50%;
+  }
+}
+.reviews__author{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: $base-text-color-light;
+}
+.reviews__author-id{
+  font-size: 17px;
+  font-weight: normal;
+}

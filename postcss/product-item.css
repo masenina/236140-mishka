@@ -1,0 +1,24 @@
+.product-item{
+  color: $base-text-color-light;
+  font-size: 15px;
+}
+
+.product-item__title{
+  font-size: 25px;
+  color: $base-color-dark;
+  font-weight: bold;
+  margin: 0;
+}
+
+.product-item__product-of-week-label{
+  color: $base-lightgreen-color;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.product-item__price{
+  font-size: 17px;
+  font-weight: bold;
+}

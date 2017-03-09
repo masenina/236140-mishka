@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="page-header">
   <div class="page-header__top-section">
     <a class="page-header__logo" href="index.html">
-      <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+      <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__trigger" type="button"></button>
       <ul class="main-nav__menu">
-        <li><a class="main-nav__menu-item" href="#">Каталог товаров</a></li>
-        <li><a class="main-nav__menu-item" href="#">Вязание на заказ</a></li>
-        <li><a class="main-nav__menu-item" href="#">Поиск по сайту</a></li>
-        <li><a class="main-nav__menu-item" href="#">Корзина: пока пуста</a></li>
+        <li class="main-nav__menu-item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__menu-item"><a href="form.html">Вязание на заказ</a></li>
+        <li class="main-nav__menu-item main-nav__menu-item--search"><a href="#">Поиск по сайту</a></li>
+        <li class="main-nav__menu-item main-nav__menu-item--cart"><a href="#">Корзина: пока пуста</a></li>
       </ul>
     </nav>
   </div>
@@ -24,75 +25,73 @@
 
 <main class="page">
   <h2 class="page__title">Вязание на заказ</h2>
-  <section class="custom-order">
-    <p class="custom-order__description">Мы будем рады воплотить в эизнь ваши пожелания! Заполните
-      простую форму заказа, и мы свяжемся с вами, что бы уточнить детали.</p>
-    <form class="order-from" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="order-from__group">
-        <legend class="order-from__group-title">Тип</legend>
+  <p class="page__description">Мы будем рады воплотить в эизнь ваши пожелания! Заполните
+    простую форму заказа, и мы свяжемся с вами, что бы уточнить детали.</p>
+  <form class="custom-order" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="custom-order__group">
+      <legend class="custom-order__group-title">Тип</legend>
 
-        <input class="order-from__radio" type="radio" name="order-type" id="home-decor" value="home-decor" checked>
-        <label class="order-from__label" for="home-decor">Аксессуар для дома</label>
+      <input class="custom-order__radio" type="radio" name="order-type" id="home-decor" value="home-decor" checked>
+      <label class="custom-order__label custom-order__label--active" for="home-decor">Аксессуар для дома</label>
 
-        <input class="order-from__label" type="radio" name="order-type" id="toy" value="toy">
-        <label class="order-from__radio" for="toy">Детская игрушка</label>
-      </fieldset>
+      <input class="custom-order__radio" type="radio" name="order-type" id="toy" value="toy">
+      <label class="custom-order__label custom-order__label--active" for="toy">Детская игрушка</label>
+    </fieldset>
 
-      <fieldset class="order-from__group">
-        <legend class="order-from__group-title">Цвет</legend>
+    <fieldset class="custom-order__group">
+      <legend class="custom-order__group-title">Цвет</legend>
 
-        <input class="order-from__checkbox" type="checkbox" name="white" value="white" id="white" checked>
-        <label class="order-from__label" for="white">Белый</label>
+      <input class="custom-order__checkbox" type="checkbox" name="white" value="white" id="white" checked>
+      <label class="custom-order__label custom-order__label--active" for="white">Белый</label>
 
-        <input class="order-from__checkbox" type="checkbox" name="gray" value="gray" id="gray" checked>
-        <label class="order-from__label"  for="gray">Серый</label>
+      <input class="custom-order__checkbox" type="checkbox" name="gray" value="gray" id="gray" checked>
+      <label class="custom-order__label custom-order__label--active"  for="gray">Серый</label>
 
-        <input class="order-from__checkbox" type="checkbox" name="tiffany" value="tiffany" id="tiffany" >
-        <label class="order-from__label"  for="tiffany">Тиффани</label>
+      <input class="custom-order__checkbox" type="checkbox" name="tiffany" value="tiffany" id="tiffany" >
+      <label class="custom-order__label custom-order__label--active"  for="tiffany">Тиффани</label>
 
-        <input class="order-from__checkbox" type="checkbox" name="black" value="black" id="black" >
-        <label class="order-from__label"  for="black">Черный</label>
+      <input class="custom-order__checkbox" type="checkbox" name="black" value="black" id="black" >
+      <label class="custom-order__label custom-order__label--active"  for="black">Черный</label>
 
-        <input class="order-from__checkbox" type="checkbox" name="pink" value="pink" id="pink" >
-        <label class="order-from__label"  for="pink">Розовый</label>
+      <input class="custom-order__checkbox" type="checkbox" name="pink" value="pink" id="pink" >
+      <label class="custom-order__label custom-order__label--active"  for="pink">Розовый</label>
 
-        <input class="order-from__checkbox" type="checkbox" name="oranage" value="oranage" id="oranage">
-        <label class="order-from__label" for="oranage">Оранжевый</label>
-      </fieldset>
+      <input class="custom-order__checkbox" type="checkbox" name="oranage" value="oranage" id="oranage">
+      <label class="custom-order__label custom-order__label--active" for="oranage">Оранжевый</label>
+    </fieldset>
 
-      <fieldset class="order-from__group">
-        <legend class="order-from__group-title">ФИО</legend>
+    <fieldset class="custom-order__group">
+      <legend class="custom-order__group-title">ФИО</legend>
 
-        <label class="order-from__label" for="name">Имя:</label>
-        <input class="order-from__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+      <label class="custom-order__label" for="name">Имя:</label>
+      <input class="custom-order__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
 
-        <label class="order-from__label" for="surname">Фамилия:</label>
-        <input class="order-from__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+      <label class="custom-order__label" for="surname">Фамилия:</label>
+      <input class="custom-order__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
 
-        <label class="order-from__label" for="patronymic">Отчество:</label>
-        <input class="order-from__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
-      </fieldset>
+      <label class="custom-order__label" for="patronymic">Отчество:</label>
+      <input class="custom-order__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+    </fieldset>
 
-      <fieldset class="order-from__group">
-        <legend class="order-from__group-title">Тел</legend>
-        <input type="tel" class="order-from__text custom-order__text--tel" name="tel" pattern="[\+]7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX*" required>
-      </fieldset>
+    <fieldset class="custom-order__group">
+      <legend class="custom-order__group-title">Тел</legend>
+      <input type="tel" class="custom-order__text custom-order__text--tel" name="tel" pattern="[\+]7 [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX*" required>
+    </fieldset>
 
-      <fieldset class="custom-order__group">
-        <legend class="custom-order__group-title">e-mail</legend>
-        <input type="email" class="order-from__text custom-order__text--email" name="email" placeholder="Ваш Email*" required>
-      </fieldset>
+    <fieldset class="custom-order__group">
+      <legend class="custom-order__group-title">e-mail</legend>
+      <input type="email" class="custom-order__text order-from__text--email" name="email" placeholder="Ваш Email*" required>
+    </fieldset>
 
-      <fieldset class="order-from__group">
-        <legend class="order-from__group-title">Доп</legend>
-        <textarea name="addition" rows=8 placeholder="Опишите все ваши пожелания к заказу"></textarea>
-      </fieldset>
-      <p class="order-from__notice">* - поля обязаельные к заполнению</p>
-      <button class="order-from__submit-button btn" type="submit">отправить заказ</button>
-    </form>
-
-  </section>
+    <fieldset class="custom-order__group">
+      <legend class="custom-order__group-title">Доп</legend>
+      <textarea class="custom-order__textarea" name="addition" rows=8 placeholder="Опишите все ваши пожелания к заказу"></textarea>
+    </fieldset>
+    <p class="custom-order__notice">*Поля обязаельные к заполнению</p>
+    <button class="custom-order__submit-button btn" type="submit">отправить заказ</button>
+  </form>
 </main>
+
 <footer class="page-footer">
   <div class="page-footer__social-links">
     <a href="#" class="page-footer__social-link page-footer__social-link--in"></a>
@@ -101,7 +100,7 @@
   </div>
   <div class="page-footer__copyright">
     <p class="page-footer__text">Разработано:</p>
-    <a class="page-footer__logo" href="#"><img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy"></a>
+    <a class="page-footer__logo" href="#"></a>
   </div>
 </footer>
 </body>

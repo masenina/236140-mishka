@@ -1,3 +1,4 @@
+@import "variables.css";
 @import "about-us.css";
 @import "catalog-items.css";
 @import "contacts.css";
@@ -9,6 +10,5 @@
 @import "page-header.css";
 @import "producing.css";
 @import "product-item.css";
-@import "product-of-week.css";
 @import "reviews.css";
 @import "global.css";

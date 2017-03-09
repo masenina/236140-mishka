@@ -1,11 +1,11 @@
 
 .page-header__main-section{
-  height:300px;
-  background: #fafafa url("../img/hero-mobile@1x.jpg") no-repeat;
+  background: $background-lightgray url("../img/hero-mobile@1x.jpg") no-repeat;
 }
 
 .page-header__caption{
-  font-size: 24px;
+  font-size: 27px;
+  font-weight: bold;
 }
 
 .page-header__groups{
@@ -13,17 +13,31 @@
   padding: 0;
 }
 
-.page-header__group{
-  background: lightseagreen no-repeat 100% 0;
-  height: 70px;
-  &--home{
-    background-image: url("/img/icon-interior.svg");
+.page-header__group {
+  text-decoration: none;
+  color: $group-btn-text-color;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.page-header__group--interior{
+  background: $interior-btn-color url("/img/icon-interior.svg")no-repeat 100% 0;
+  &:hover{
+    background-color: $interior-btn-color-active;
   }
-  &--toys{
-    background-image: url("/img/icon-toy.svg");
+  &:active{
+    background-color: $interior-btn-color-active;
+    color: $group-btn-text-color-hover;
   }
-  a{
-    text-decoration: none;
-    color: white;
+}
+
+.page-header__group--toy{
+  background: $toy-btn-color url("/img/icon-toy.svg")no-repeat 100% 0;
+  &:hover{
+    background-color: $toy-btn-color-active;
+  }
+  &:active{
+    background-color: $toy-btn-color-active;
+    color: $group-btn-text-color-hover;
   }
 }
