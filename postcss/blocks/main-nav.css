@@ -1,0 +1,31 @@
+.main-nav__trigger{
+  background: url("/img/icon-menu-open.svg") no-repeat 50% 50%;
+}
+
+.main-nav__menu{
+  padding: 0;
+
+}
+
+.main-nav__menu-item {
+  list-style-type: none;
+
+  &--search{
+    background: url("/img/icon-search.svg") no-repeat left center;
+  }
+  &--cart{
+    background: url("/img/icon-cart.svg") no-repeat left center;
+  }
+  a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+    &:hover{
+      color: $base-color-hover;
+    }
+    &:active{
+      color: $base-color-down;
+    }
+  }
+}

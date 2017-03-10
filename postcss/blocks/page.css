@@ -1,0 +1,10 @@
+.page__title{
+  font-size: 27px;
+  font-weight: bold;
+  background-color: $background-lightgray;
+}
+.page__description{
+  color: $base-text-color-light;
+  font-size: 13px;
+
+}

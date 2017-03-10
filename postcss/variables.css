@@ -1,0 +1,27 @@
+$background-lightgray: #f1f1f1;
+$base-color-dark: #000000;
+$base-color-hover: #666666;
+$base-color-down: #b2b2b2;
+$base-lightgreen-color: #63d1bb;
+$base-text-color-light: #444444;
+
+$interior-btn-color: #63d1bb;
+$interior-btn-color-active: #59d5bc;
+
+$toy-btn-color: #56c3b2;
+$toy-btn-color-active: #46c1ae;
+
+$group-btn-text-color: #ffffff;
+$group-btn-text-color-hover: rgba(255, 255, 255, 0.5);
+
+$btn-text-color: #444444;
+$btn-background-color: #ffffff;
+$btn-text-color-reverse: $btn-background-color;
+$btn-background-color-reverse: $btn-text-color;
+$btn-text-color-active: #7c7c7c;
+
+$email-color: #62d1ba;
+$email-color-hover: #46c1ae;
+$email-color-active:  rgba(70, 193, 174, 0.5);
+
+$form-color: #62d1ba;

@@ -1,0 +1,27 @@
+.page-footer{
+  background-color: $background-lightgray;
+}
+.page-footer__social-link{
+  &--in{
+    background: url("/img/icon-insta.svg") no-repeat center center;
+  }
+  &--fb{
+    background: url("/img/icon-fb.svg") no-repeat center center;
+  }
+  &--tw{
+    background: url("/img/icon-twitter.svg") no-repeat center center;
+  }
+}
+
+.page-footer__social-links{
+  border-bottom: 1px solid #e5e5e5;
+}
+.page-footer__copyright-text{
+  font-size: 19px;
+  font-weight: bold;
+}
+.page-footer__copyright-logo{
+  background: url("/img/logo-htmlacademy.svg");
+  width: 27px;
+  height: 34px;
+}

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Open Sans";
+  src:
+    local("Open Sans"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+body{
+  font-family: "Open Sans";
+}
+
+.btn{
+  border: 1px solid $btn-text-color;
+  text-decoration: none;
+  font-weight: bold;
+  color: $btn-text-color;
+  text-transform: uppercase;
+  background-color: $btn-background-color;
+  &:hover{
+    background-color: $btn-background-color-reverse;
+    color: $btn-text-color-reverse;
+  }
+  &:active{
+    background-color: $btn-background-color-reverse;
+    color: $btn-text-color-active;
+  }
+  &--teal{
+    background-color: $interior-btn-color;
+    border: 1px solid $interior-btn-color;
+    color: $group-btn-text-color;
+  }
+}

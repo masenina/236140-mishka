@@ -1,0 +1,49 @@
+.catalog-items__list {
+list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+.catalog-items__title{
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: $base-color-dark;
+  &:hover{
+    color: $base-color-hover;
+  }
+  &:active{
+    color: $base-color-down;
+  }
+
+}
+
+.catalog-items__image{
+  height: 195px;
+  width: 260px;
+  display: block;
+}
+
+.catalog-items__description{
+  font-size: 13px;
+  font-weight: bold;
+  color: $base-text-color-light;
+  border-bottom: 1px solid $background-lightgray;
+}
+
+
+.catalog-items__item{
+  border: 1px solid $background-lightgray;
+}
+
+.catalog-items__price{
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.catalog-items__bucket-icon{
+  height: 19px;
+  width:21px;
+  background: url("../img/icon-cart.svg") no-repeat center center;
+  display: block;
+}

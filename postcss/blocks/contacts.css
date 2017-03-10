@@ -1,0 +1,23 @@
+.contacts__title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contacts__option-list{
+  font-size: 15px;
+}
+
+.contacts__option-email{
+
+text-decoration:none;
+  color: $base-text-color-light;
+  border-bottom: 1px solid $email-color;
+  &:hover{
+    color: $email-color-hover;
+    border-bottom-color: $email-color-hover;
+  }
+  &:active{
+    color: $email-color-active;
+    border-bottom-color: $email-color-active;
+  }
+}
