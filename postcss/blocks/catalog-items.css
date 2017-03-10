@@ -17,12 +17,6 @@ list-style-type: none;
 
 }
 
-@for $i from 1 to 3 {
-  .catalog-items__image--$i {
-    background-image: url("/img/photo-$(i)-mobile@1x.jpg");
-  }
-}
-
 .catalog-items__image{
   height: 195px;
   width: 260px;
@@ -50,6 +44,6 @@ list-style-type: none;
 .catalog-items__bucket-icon{
   height: 19px;
   width:21px;
-  background: url("/img/icon-cart.svg") no-repeat center center;
+  background: url("../img/icon-cart.svg") no-repeat center center;
   display: block;
 }

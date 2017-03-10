@@ -16,11 +16,11 @@
 .page-footer__social-links{
   border-bottom: 1px solid #e5e5e5;
 }
-.page-footer__text{
+.page-footer__copyright-text{
   font-size: 19px;
   font-weight: bold;
 }
-.page-footer__logo{
+.page-footer__copyright-logo{
   background: url("/img/logo-htmlacademy.svg");
   width: 27px;
   height: 34px;
