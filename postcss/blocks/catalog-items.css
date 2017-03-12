@@ -47,3 +47,35 @@ list-style-type: none;
   background: url("../img/icon-cart.svg") no-repeat center center;
   display: block;
 }
+
+
+@media (min-width: 768px) {
+  .catalog-items__item{
+    display: flex;
+    justify-content: space-between;
+  }
+  .catalog-items__item-desc{
+    margin-left: 33px;
+    margin-right: 33px;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .catalog-items__order{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1150px) {
+  .catalog-items__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .catalog-items__item{
+    flex-direction: column;
+    width: 314px;
+  }
+}

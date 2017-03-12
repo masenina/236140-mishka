@@ -1,3 +1,8 @@
+.reviews{
+  @mixin container;
+  background-color: blue;
+  position: relative;
+}
 .reviews__title{
   font-size: 25px;
   font-weight: bold;
@@ -8,12 +13,17 @@
 }
 
 .reviews__arrow-btn{
+  width: 50%;
+  display:inline-block;
+  height: 51px;
+  border:none;
+  padding:0;
   &--prev{
-    background: url("/img/icon-left-arrow.svg") no-repeat 50% 50%;
+    background: $btn-background-color url("/img/icon-left-arrow.svg") no-repeat 50% 50%;
   }
 
   &--next{
-    background: url("/img/icon-right-arrow.svg") no-repeat 50% 50%;
+    background: $btn-background-color url("/img/icon-right-arrow.svg") no-repeat 50% 50%;
   }
 }
 .reviews__author{
@@ -25,4 +35,31 @@
 .reviews__author-id{
   font-size: 17px;
   font-weight: normal;
+}
+reviews__write {
+  width: 100%;
+}
+@media (min-width: 768px){
+  .reviews__write {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 167px;
+  }
+   .reviews__nav{
+      width: 167px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+}
+
+
+@media (min-width: 1150px) {
+  .reviews__nav{
+    width: 175px;
+  }
+  .reviews__write {
+    width: 175px;
+  }
 }

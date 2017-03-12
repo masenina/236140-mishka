@@ -1,16 +1,32 @@
-
-.page-header__main-section{
-  background: $background-lightgray url("../../img/hero-mobile@1x.jpg") no-repeat;
+.page-header{
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.page-header__top-section{
+  height: 80px;
 }
 
-.page-header__caption{
-  font-size: 27px;
-  font-weight: bold;
+.page-header__main-section{
+  background: #f9f9f9 url("../../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+ height: 488px;
+  position: relative;
+}
+
+.page-header__caption h1{
+    margin: 0;
+    font-size: 27px;
+    font-weight: bold;
 }
 
 .page-header__groups{
   list-style-type: none;
   padding: 0;
+  position: absolute;
+  bottom: 0;
+  margin:0;
+  width: 100%;
 }
 
 .page-header__group {
@@ -18,6 +34,9 @@
   color: $group-btn-text-color;
   font-size: 19px;
   font-weight: bold;
+
+  height: 103px;
+  display: block;
 }
 
 .page-header__group--interior{
@@ -39,5 +58,38 @@
   &:active{
     background-color: $toy-btn-color-active;
     color: $group-btn-text-color-hover;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__top-section{
+    height: 88px;
+    width: 668px;
+  }
+
+  .page-header__main-section{
+    height: 758px;
+  }
+  .page-header__groups{
+    display: flex;
+  }
+  .page-header__groups li{
+    flex-basis: 50%;
+  }
+
+}
+
+@media (min-width: 1150px) {
+  .page-header__top-section{
+    height: 89px;
+    width: 1050px;
+  }
+
+  .page-header__main-section{
+    height: 758px;
+  }
+  .page-header__groups{
+    @mixin container;
+    margin-left: 50px;
   }
 }
