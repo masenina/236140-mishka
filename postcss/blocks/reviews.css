@@ -18,11 +18,11 @@
   border:none;
   padding:0;
   &--prev{
-    background: $btn-background-color url("/img/icon-left-arrow.svg") no-repeat 50% 50%;
+    background: $btn-background-color url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
   }
 
   &--next{
-    background: $btn-background-color url("/img/icon-right-arrow.svg") no-repeat 50% 50%;
+    background: $btn-background-color url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
   }
 }
 .reviews__author{

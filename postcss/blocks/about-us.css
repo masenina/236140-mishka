@@ -6,7 +6,7 @@
 
 @for $i from 1 to 6 {
   .about-us__item--$i div{
-    background-image: url("/img/icon-feature-$(i).svg");
+    background-image: url("../img/icon-feature-$(i).svg");
   }
   .about-us__item--$i{
     order: $i;

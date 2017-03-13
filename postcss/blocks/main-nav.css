@@ -21,10 +21,10 @@
 .main-nav__menu-item {
   list-style-type: none;
   &--search{
-    background: url("/img/icon-search.svg") no-repeat left center;
+    background: url("../img/icon-search.svg") no-repeat left center;
   }
   &--cart{
-    background: url("/img/icon-cart.svg") no-repeat left center;
+    background: url("../img/icon-cart.svg") no-repeat left center;
   }
   a {
     text-decoration: none;

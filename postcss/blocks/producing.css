@@ -6,7 +6,7 @@
 .producing__title{
   font-size: 19px;
   font-weight: bold;
-  background: url("/img/icon-video.svg") no-repeat left center;
+  background: url("../img/icon-video.svg") no-repeat left center;
   position: absolute;
   top: 0;
 }
