@@ -1,9 +1,11 @@
 .product-item{
+  @mixin container;
   color: $base-text-color-light;
   font-size: 15px;
+  position: relative;
 }
 
-.product-item__title{
+s.product-item__title{
   font-size: 25px;
   color: $base-color-dark;
   font-weight: bold;
@@ -18,7 +20,51 @@
   margin: 0;
 }
 
-.product-item__price{
+.product-item__buy p{
   font-size: 17px;
   font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: 768px){
+  .product-item{
+    display: flex;
+    flex-direction: column;
+  }
+  .product-item__main-section{
+    display: flex;
+  }
+  .product-item__image{
+    flex-basis: 334px;
+    img{
+      width: 334px;
+      height: 400px;
+    }
+  }
+  .product-item__buy{
+    position: absolute;
+    width: 289px;
+    bottom: 0;
+    left:0;
+  }
+}
+@media (min-width: 1150px){
+  .product-item__image{
+    flex-basis: 525px;
+    img{
+      width: 525px;
+      height: 626px;
+    }
+  }
+  .product-item__title-section{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 700px;
+    flex-basis: 100%;
+  }
+  .product-item__info{
+    padding-top: 130px;
+  }
 }

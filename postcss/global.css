@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
   font-family: "Open Sans";
   src:
     local("Open Sans"),
@@ -7,15 +7,24 @@
 
 body{
   font-family: "Open Sans";
+  min-width: 320px;
+
+  background-color: $base-bg-color;
+  margin: 0;
 }
 
 .btn{
   border: 1px solid $btn-text-color;
   text-decoration: none;
   font-weight: bold;
+  font-size: 17px;
   color: $btn-text-color;
   text-transform: uppercase;
+  text-align: center;
   background-color: $btn-background-color;
+  height: 51px;
+  line-height: 51px;
+  display: block;
   &:hover{
     background-color: $btn-background-color-reverse;
     color: $btn-text-color-reverse;

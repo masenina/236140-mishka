@@ -1,10 +1,37 @@
+.producing{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 .producing__title{
   font-size: 19px;
   font-weight: bold;
-  background: url("/img/icon-video.svg") no-repeat left center;
+  background: url("../img/icon-video.svg") no-repeat left center;
+  position: absolute;
+  top: 0;
 }
-
+.producing__video{
+padding-top: 60px;
+}
 .producing__video-description{
   font-size: 13px;
   color: $base-text-color-light;
+}
+@media (min-width: 768px){
+  .producing{
+    flex-direction: column;
+  }
+  .producing__title{
+    position: static;
+  }
+  .producing__video{
+    padding-top: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1150px){
+  .producing{
+    flex-direction: row;
+  }
+
 }
