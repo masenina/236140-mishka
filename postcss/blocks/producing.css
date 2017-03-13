@@ -17,15 +17,21 @@ padding-top: 60px;
   font-size: 13px;
   color: $base-text-color-light;
 }
-
 @media (min-width: 768px){
   .producing{
-    flex-direction: row;
+    flex-direction: column;
   }
   .producing__title{
     position: static;
   }
   .producing__video{
     padding-top: 0;
+    width: 100%;
   }
+}
+@media (min-width: 1150px){
+  .producing{
+    flex-direction: row;
+  }
+
 }
