@@ -4,7 +4,7 @@
   z-index: 1;
 }
 .main-nav__trigger{
-  background: url("/img/icon-menu-open.svg") no-repeat 50% 50%;
+  background: url("../img/icon-menu-open.svg") no-repeat 50% 50%;
   width: 30px;
   height: 20px;
   border: none;
