@@ -2,7 +2,6 @@
   @mixin container;
   color: $base-text-color-light;
   font-size: 15px;
-  background-color: deeppink;
   position: relative;
 }
 

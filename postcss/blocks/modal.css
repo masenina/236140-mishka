@@ -1,3 +1,6 @@
+.modal{
+  @mixin container;
+}
 .modal__title{
   font-size: 25px;
   font-weight: bold;
@@ -9,4 +12,14 @@
 
 .modal__label{
   border: 1px solid #ececec;
+}
+
+.modal__form{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__items{
+  display: flex;
+  justify-content: center;
 }

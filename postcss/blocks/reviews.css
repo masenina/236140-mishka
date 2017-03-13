@@ -1,6 +1,5 @@
 .reviews{
   @mixin container;
-  background-color: blue;
   position: relative;
 }
 .reviews__title{

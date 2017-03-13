@@ -14,7 +14,6 @@
 }
 .about-us{
   @mixin container;
-  background-color: red;
 }
 .about-us__title{
   font-size: 25px;

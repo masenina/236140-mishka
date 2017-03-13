@@ -1,5 +1,4 @@
 .contacts{
-  background-color: mediumorchid;
   @mixin container;
 }
 .contacts__flag-img{
@@ -21,8 +20,11 @@
   margin-right: 30px;
 }
 .contacts__map{
-  margin-left: -30px;
-  width: 320px;
+  width: 100%;
+  iframe{
+    width: 100%;
+    border: none;
+  }
 }
 .product-item__parameters{
   width:100%;
