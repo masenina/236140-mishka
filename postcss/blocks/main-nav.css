@@ -18,7 +18,7 @@
   margin: 0;
 }
 
-.main-nav__menu-item {
+.main-nav__menu-item{
   list-style-type: none;
   &--search{
     background: url("../img/icon-search.svg") no-repeat left center;
@@ -26,7 +26,7 @@
   &--cart{
     background: url("../img/icon-cart.svg") no-repeat left center;
   }
-  a {
+  a{
     text-decoration: none;
     font-size: 17px;
     font-weight: bold;
@@ -40,12 +40,12 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   .main-nav__menu{
     display: flex;
     width: 100%;
   }
-  .main-nav__trigger {
+  .main-nav__trigger{
     display: none;
   }
 }

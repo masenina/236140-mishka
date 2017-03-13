@@ -1,10 +1,10 @@
-/*@for $i from 1 to 6 {
-  .about-us__image--$i {
+/*@for $i from 1 to 6{
+  .about-us__image--$i{
     background-image: url("/img/icon-feature-$(i).svg");
   }
 }*/
 
-@for $i from 1 to 6 {
+@for $i from 1 to 6{
   .about-us__item--$i div{
     background-image: url("../img/icon-feature-$(i).svg");
   }
@@ -51,7 +51,7 @@
   }
 
 }
-@media (min-width: 1150px) {
+@media (min-width: 1150px){
   .about-us{
     padding-left: 150px;
     padding-right: 150px;

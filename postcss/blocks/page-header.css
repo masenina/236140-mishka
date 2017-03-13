@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-.page-header__group {
+.page-header__group{
   text-decoration: none;
   color: $group-btn-text-color;
   font-size: 19px;
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   .page-header__top-section{
     height: 88px;
     width: 668px;
@@ -79,7 +79,7 @@
 
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1150px){
   .page-header__top-section{
     height: 89px;
     width: 1050px;

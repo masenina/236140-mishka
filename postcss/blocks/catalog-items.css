@@ -1,4 +1,4 @@
-.catalog-items__list {
+.catalog-items__list{
 list-style-type: none;
   margin:0;
   padding: 0;
@@ -49,7 +49,7 @@ list-style-type: none;
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   .catalog-items__item{
     display: flex;
     justify-content: space-between;
@@ -68,7 +68,7 @@ list-style-type: none;
     justify-content: space-between;
   }
 }
-@media (min-width: 1150px) {
+@media (min-width: 1150px){
   .catalog-items__list{
     display: flex;
     flex-direction: row;

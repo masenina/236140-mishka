@@ -18,7 +18,7 @@ padding-top: 60px;
   color: $base-text-color-light;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   .producing{
     flex-direction: row;
   }

@@ -1,7 +1,6 @@
 .page{
   @mixin container;
 }
-
 .page__title{
   font-size: 27px;
   font-weight: bold;

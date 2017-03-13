@@ -43,8 +43,8 @@ text-decoration:none;
     border-bottom-color: $email-color-active;
   }
 }
-@media (min-width: 768px) {
-  .contacts__option-list {
+@media (min-width: 768px){
+  .contacts__option-list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,7 +69,7 @@ text-decoration:none;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1150px){
   .contacts{
     display: flex;
     flex-direction: row;
@@ -80,10 +80,10 @@ text-decoration:none;
     bottom: 0;
     left:16.5%;
   }
-  .contacts__map {
+  .contacts__map{
   flex-basis: 50%;
   }
-  .contacts__option-list {
+  .contacts__option-list{
     flex-direction: column;
   }
   .contacts__main-section{

@@ -26,7 +26,7 @@ s.product-item__title{
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
   .product-item{
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ s.product-item__title{
     left:0;
   }
 }
-@media (min-width: 1150px) {
+@media (min-width: 1150px){
   .product-item__image{
     flex-basis: 525px;
     img{
