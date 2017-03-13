@@ -10,14 +10,14 @@
 
 .page-header__main-section{
   background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
- height: 488px;
+  height: 488px;
   position: relative;
 }
 
 .page-header__caption h1{
-    margin: 0;
-    font-size: 27px;
-    font-weight: bold;
+  margin: 0;
+  font-size: 27px;
+  font-weight: bold;
 }
 
 .page-header__groups{

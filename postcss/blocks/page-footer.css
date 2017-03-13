@@ -1,6 +1,6 @@
 .page-footer{
   background-color: $background-lightgray;
- @mixin container;
+  @mixin container;
 }
 .page-footer__logo{
   display: none;
@@ -20,7 +20,6 @@
     background: url("../img/icon-twitter.svg") no-repeat center center;
   }
 }
-
 .page-footer__social-links{
   border-bottom: 1px solid #e5e5e5;
   display: flex;
@@ -53,6 +52,4 @@
   .page-footer__logo{
     display: block;
   }
-
-
 }

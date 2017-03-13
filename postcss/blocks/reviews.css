@@ -6,11 +6,9 @@
   font-size: 25px;
   font-weight: bold;
 }
-
 .reviews__item{
   margin: 0;
 }
-
 .reviews__arrow-btn{
   width: 50%;
   display:inline-block;
@@ -20,7 +18,6 @@
   &--prev{
     background: $btn-background-color url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
   }
-
   &--next{
     background: $btn-background-color url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
   }
@@ -45,15 +42,13 @@ reviews__write {
     right: 10px;
     width: 167px;
   }
-   .reviews__nav{
-      width: 167px;
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-    }
+  .reviews__nav{
+    width: 167px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
 }
-
-
 @media (min-width: 1150px) {
   .reviews__nav{
     width: 175px;
