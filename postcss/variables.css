@@ -20,6 +20,7 @@ $btn-background-color: #ffffff;
 $btn-text-color-reverse: $btn-background-color;
 $btn-background-color-reverse: $btn-text-color;
 $btn-text-color-active: #7c7c7c;
+$arrow-btn-border-color: #ececec;
 
 $email-color: #62d1ba;
 $email-color-hover: #46c1ae;

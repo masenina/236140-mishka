@@ -5,6 +5,12 @@
     url("../fonts/opensans.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff");
+  font-weight: bold;
+}
+
 body{
   font-family: "Open Sans";
   min-width: 320px;
