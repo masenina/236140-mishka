@@ -1,8 +1,12 @@
-.catalog-items__list{
-list-style-type: none;
-  margin:0;
+.catalog-items{
+  @mixin container;
+}
+.catalog-items__list {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
 }
+
 .catalog-items__title{
   text-decoration: none;
   font-size: 17px;

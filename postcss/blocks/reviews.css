@@ -24,7 +24,7 @@
   width: 50%;
   display:inline-block;
   height: 51px;
-  border: 1px solid $arrow-btn-border-color;
+  border: 1px solid $items-border-color;
   padding:0;
   &--prev{
     background: $btn-background-color url("../img/icon-left-arrow.svg") no-repeat 50% 50%;

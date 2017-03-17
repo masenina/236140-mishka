@@ -7,45 +7,51 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--menu-opened page-header--nojs">
   <div class="page-header__top-section">
     <div class="page-header__logo">
       <a href="index.html">
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
     </div>
-    <nav class="main-nav">
-      <button class="main-nav__trigger" type="button"></button>
-      <ul class="main-nav__menu main-nav__menu--first">
-        <li class="main-nav__menu-item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__menu-item"><a href="form.html">Вязание на заказ</a></li>
-      </ul>
-      <ul class="main-nav__menu main-nav__menu--last">
-        <li class="main-nav__menu-item main-nav__menu-item--search"><a href="#">Поиск по сайту</a></li>
-        <li class="main-nav__menu-item main-nav__menu-item--cart"><a href="#">Корзина: пока пуста</a></li>
-      </ul>
-    </nav>
+    <!--nav class="page-header page-header--opened page-header--no-js"-->
+    <button class="page-header__trigger" type="button"></button>
+    <ul class="page-header__menu page-header__menu--first">
+      <li class="page-header__menu-item"><a href="catalog.html">Каталог товаров</a></li>
+      <li class="page-header__menu-item"><a href="form.html">Вязание на заказ</a></li>
+    </ul>
+    <ul class="page-header__menu page-header__menu--second">
+      <li class="page-header__menu-item page-header__menu-item--search">
+        <a href="#">Поиск по сайту</a></li>
+      <li class="page-header__menu-item page-header__menu-item--cart"><a href="#">Корзина: пока пуста</a></li>
+    </ul>
+    <span class="page-header__free-delivery-text">Бесплатная доставка по России</span>
+    <ul class="page-header__menu page-header__menu--third">
+      <li class="page-header__menu-item"><a href="catalog.html">Новые поступления</a></li>
+      <li class="page-header__menu-item"><a href="form.html">Распродажа</a></li>
+    </ul>
+    <!--/nav-->
   </div>
   <div class="page-header__main-section">
     <div class="page-header__caption">
-      <h1>Милые штуки ручной работы для дома</h1>
+      <h1>Милые штуки ручной<br> работы для дома</h1>
     </div>
-      <ul class="page-header__groups page">
-        <li class="page-header__group-item  page-header__item--interior">
+    <ul class="page-header__groups page">
+      <li class="page-header__group-item  page-header__item--interior">
 
-          <a class="page-header__group-text page-header__text--interior" href="#">
-            Предметы интерьера
-          </a>
+        <a class="page-header__group-text page-header__text--interior" href="#">
+          Предметы интерьера
+        </a>
 
-        </li>
-        <li class="page-header__group-item">
-          <div class="page-header__group-container page-header__item-toy">
+      </li>
+      <li class="page-header__group-item">
+        <div class="page-header__group-container page-header__item-toy">
           <a class="page-header__group-text page-header__text--toy" href="#">
             Детские игрушки
           </a>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </li>
+    </ul>
   </div>
 </header>
 
@@ -201,5 +207,21 @@
     <button type="submit" class="modal__btn btn--teal">Добавить</button>
   </form>
 </div>
+
+
+<script>
+  var pageHeader = document.querySelector('.page-header');
+  var navToggle = document.querySelector('.page-header__trigger');
+  pageHeader.classList.remove('page-header--no-js');
+  navToggle.addEventListener('click', function() {
+    if (pageHeader.classList.contains('page-header--menu-closed')) {
+      pageHeader.classList.remove('page-header--menu-closed');
+      pageHeader.classList.add('page-header--menu-opened');
+    } else {
+      pageHeader.classList.add('page-header--menu-closed');
+      pageHeader.classList.remove('page-header--menu-opened');
+    }
+  });
+</script>
 </body>
 </html>
