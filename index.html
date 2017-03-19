@@ -15,18 +15,18 @@
       </a>
     </div>
     <!--nav class="page-header page-header--opened page-header--no-js"-->
-    <button class="page-header__trigger" type="button"></button>
-    <ul class="page-header__menu page-header__menu--first">
+    <button class="page-header__menu-trigger" type="button"></button>
+    <ul class="page-header__menu page-header__menu--main">
       <li class="page-header__menu-item"><a href="catalog.html">Каталог товаров</a></li>
       <li class="page-header__menu-item"><a href="form.html">Вязание на заказ</a></li>
     </ul>
-    <ul class="page-header__menu page-header__menu--second">
+    <ul class="page-header__menu page-header__menu--user">
       <li class="page-header__menu-item page-header__menu-item--search">
         <a href="#">Поиск по сайту</a></li>
       <li class="page-header__menu-item page-header__menu-item--cart"><a href="#">Корзина: пока пуста</a></li>
     </ul>
     <span class="page-header__free-delivery-text">Бесплатная доставка по России</span>
-    <ul class="page-header__menu page-header__menu--third">
+    <ul class="page-header__menu page-header__menu--submenu">
       <li class="page-header__menu-item"><a href="catalog.html">Новые поступления</a></li>
       <li class="page-header__menu-item"><a href="form.html">Распродажа</a></li>
     </ul>
@@ -210,9 +210,12 @@
 
 
 <script>
+
   var pageHeader = document.querySelector('.page-header');
-  var navToggle = document.querySelector('.page-header__trigger');
-  pageHeader.classList.remove('page-header--no-js');
+  var navToggle = document.querySelector('.page-header__menu-trigger');
+  pageHeader.classList.remove('page-header--nojs');
+  pageHeader.classList.add('page-header--menu-closed');
+  pageHeader.classList.remove('page-header--menu-opened')
   navToggle.addEventListener('click', function() {
     if (pageHeader.classList.contains('page-header--menu-closed')) {
       pageHeader.classList.remove('page-header--menu-closed');

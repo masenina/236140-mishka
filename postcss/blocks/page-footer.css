@@ -62,9 +62,10 @@
     border: none;
   }
   .page-footer__logo{
-    flex-basis: 33%;
+    flex-basis: 34%;
   }
   .page-footer__copyright{
     flex-basis: 33%;
+    justify-content: flex-end;
   }
 }
