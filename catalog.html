@@ -14,7 +14,6 @@
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
     </div>
-    <!--nav class="page-header page-header--opened page-header--no-js"-->
     <button class="page-header__menu-trigger" type="button"></button>
     <ul class="page-header__menu page-header__menu--main">
       <li class="page-header__menu-item"><a href="catalog.html">Каталог товаров</a></li>
@@ -30,7 +29,6 @@
       <li class="page-header__menu-item"><a href="catalog.html">Новые поступления</a></li>
       <li class="page-header__menu-item"><a href="form.html">Распродажа</a></li>
     </ul>
-    <!--/nav-->
 
   </div>
   <div class="page-header__caption page-header__caption--regular-page">
@@ -156,21 +154,17 @@
     }
   });
 
-
   var modal = document.querySelector('.modal');
   var btn = document.querySelector('.producing__order');
   var closeBtn = document.querySelector('modal__btn');
-
   btn.addEventListener('click', function() {
     modal.classList.add('modal--display');
   });
-
   window.addEventListener('click', function(event) {
     if (event.target == modal) {
       modal.classList.remove('modal--display');
     }
   });
-
 </script>
 </body>
 </html>

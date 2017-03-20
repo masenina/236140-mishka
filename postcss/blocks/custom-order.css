@@ -110,7 +110,9 @@
       background-color: inherit;
     }
   }
-
+  .custom-order__intro{
+    font-size: 17px;
+  }
   .custom-order__group-title{
     position: static;
     /*width: 167px;*/
@@ -120,6 +122,12 @@
   .custom-order__text--tel{
     flex-basis: 75%;
     margin-bottom: 20px;
+  }
+  .custom-order__label{
+    font-size: 19px;
+  }
+  .custom-order__text{
+    font-size: 19px;
   }
   .custom-order__text--email{
     flex-basis: 75%;
@@ -144,6 +152,9 @@
       width:100%;
     }
   }
+  .custom-order__textarea{
+    font-size: 19px;
+  }
   .custom-order__bottom-section{
     display: flex;
     justify-content: space-between;
@@ -155,6 +166,7 @@
   }
   .custom-order__notice{
     order: 1;
+    font-size: 17px;
   }
 }
 
@@ -165,6 +177,10 @@
   }
   .custom-order__items{
     flex-basis: 82.5%;
+  }
+  .custom-order__intro{
+    padding-left: 175px;
+    box-sizing: border-box;
   }
   .custom-order__items--color{
     .custom-order__item{

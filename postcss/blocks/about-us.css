@@ -75,6 +75,9 @@
     box-sizing: border-box;
     margin-top: 80px;
   }
+  .about-us__title{
+    font-size: 53px;
+  }
   .about-us__item{
     width: 350px;
   }
