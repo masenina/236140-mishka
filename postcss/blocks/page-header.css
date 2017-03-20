@@ -272,8 +272,6 @@
 }
 
 @media (min-width: 1150px){
-
-
   .page-header__caption {
     padding-top: 160px;
     h1{
@@ -324,6 +322,4 @@
     padding-left: 10%;
     background-position: 90% 50%;
   }
-
 }
-
