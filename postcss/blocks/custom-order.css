@@ -1,11 +1,29 @@
+.custom-order{
+
+  margin-bottom: 60px;
+}
+.custom-order__intro{
+  @mixin container;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: $base-text-color-light;
+  font-size: 13px;
+  line-height: 30px;
+}
 .custom-order__group{
+  @mixin container;
   border: 0px;
   border-top: 1px solid $form-color;
   position: relative;
-  padding: 10px;
+  padding: 35px 0;
   display: flex;
+  &:nth-child(7){
+    padding-bottom: 0;
+  }
 }
-
+.custom-order__bottom-section{
+  @mixin container;
+}
 .custom-order__group-title{
   font-size: 17px;
   font-weight: bold;
@@ -13,7 +31,7 @@
   text-transform: uppercase;
   display: block;
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 0;
   background-color: $base-bg-color;
   padding-right: 10px;
@@ -21,6 +39,7 @@
 .custom-order__label{
   font-size: 17px;
   font-weight: bold;
+  padding-right: 30px;
   &--active:hover{
     color: $base-color-hover;
   }
@@ -31,80 +50,155 @@
 
 .custom-order__text{
   border: 0;
+  font-size: 17px;
+  height: 40px;
+  width: 100%;
   border-bottom: 1px solid $base-color-dark;
+  &--tel{
+    background: url("../img/icon-phone.svg") no-repeat right center;
+  }
+  &--email{
+    background: url("../img/icon-mail.svg") no-repeat right center;
+  }
 }
 .custom-order__items{
-  &--fio{
-    .custom-order__item{
-      display: flex;
-      flex-direction: column;
+  width: 100%;
+}
+.custom-order__items--fio{
+  .custom-order__item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    &:first-child{
+      margin-top: 0;
     }
   }
 
 }
+
 .custom-order__textarea{
   border: 1px solid $base-color-dark;
+  width: 100%;
+  font-size: 17px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .custom-order__notice{
   font-size: 14px;
   color: $base-text-color-light;
 }
+.custom-order__submit-button{
+  width:100%;
+  margin-top: 30px;
+}
+
+
 @media (min-width: 768px){
   .custom-order__group{
     flex-direction: row;
-    padding: 0;
+    padding: 60px 0;
+    border: none;
+    padding:0;
   }
-
+  .custom-order__bg-wrapper{
+    padding: 65px;
+  }
+  .custom-order__bg-wrapper--odd {
+    background-color: $background-lightgray;
+    .custom-order__group-title {
+      background-color: inherit;
+    }
+  }
+  .custom-order__intro{
+    font-size: 17px;
+  }
   .custom-order__group-title{
     position: static;
-    width: 167px;
+    /*width: 167px;*/
+    flex-basis: 25%;
     padding: 0;
   }
-
+  .custom-order__text--tel{
+    flex-basis: 75%;
+    margin-bottom: 20px;
+  }
+  .custom-order__label{
+    font-size: 19px;
+  }
+  .custom-order__text{
+    font-size: 19px;
+  }
+  .custom-order__text--email{
+    flex-basis: 75%;
+  }
   .custom-order__items{
     width: 501px;
     &--fio{
       .custom-order__item{
         flex-direction: row;
+        align-items: baseline;
       }
     }
     &--color{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .custom-order__item{
-      flex-basis: 50%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .custom-order__item{
+        flex-basis: 50%;
+      }
     }
-  }
     textarea{
       width:100%;
     }
   }
+  .custom-order__textarea{
+    font-size: 19px;
+  }
   .custom-order__bottom-section{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+  }
+  .custom-order__submit-button{
+    width: 240px;
+    margin-top: 0;
   }
   .custom-order__notice{
     order: 1;
+    font-size: 17px;
   }
 }
 
 @media (min-width: 1150px){
   .custom-order__group-title{
     position: static;
-    flex-basis: 175;
+    flex-basis: 16.5%;
   }
   .custom-order__items{
-    width: 875px;
+    flex-basis: 82.5%;
+  }
+  .custom-order__intro{
+    padding-left: 175px;
+    box-sizing: border-box;
   }
   .custom-order__items--color{
     .custom-order__item{
       flex-basis: 33%;
     }
   }
+
+  .custom-order__text--tel{
+    flex-basis: 82.5%;
+    margin-bottom: 20px;
+  }
+  .custom-order__text--email{
+    flex-basis: 82.5%;
+  }
   .custom-order__bottom-section{
-    width:700px;
     margin: auto;
+  }
+  .custom-order__submit-button{
+    margin-left: 16.5%;
   }
 }

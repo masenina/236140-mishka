@@ -1,5 +1,8 @@
 .page-footer{
   background-color: $background-lightgray;
+
+}
+.page-footer__container{
   @mixin container;
 }
 .page-footer__logo{
@@ -7,9 +10,8 @@
 }
 .page-footer__social-link{
   width: 24px;
-  height: 24px;
-  display: block;
-  margin: 20px;
+  height: 29px;
+  margin: 25px 17px;
   &--in{
     background: url("../img/icon-insta.svg") no-repeat center center;
   }
@@ -24,12 +26,12 @@
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: center;
-
 }
 .page-footer__copyright{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 5px 0 10px 0;
 }
 .page-footer__copyright-text{
   font-size: 19px;
@@ -40,16 +42,30 @@
   width: 27px;
   height: 34px;
   display: block;
-  margin-left: 10px;
+  margin-left: 25px;
 }
-@media (min-width: 768px){
-  .page-footer{
+
+@media (min-width: 768px) {
+  .page-footer__container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .page-footer__logo{
     display: block;
+  }
+  .page-footer__social-links{
+    flex-basis: 33%;
+    border: none;
+  }
+  .page-footer__logo{
+    flex-basis: 34%;
+  }
+  .page-footer__copyright{
+    flex-basis: 33%;
+    justify-content: flex-end;
   }
 }

@@ -5,6 +5,12 @@
     url("../fonts/opensans.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff");
+  font-weight: bold;
+}
+
 body{
   font-family: "Open Sans";
   min-width: 320px;
@@ -22,7 +28,7 @@ body{
   text-transform: uppercase;
   text-align: center;
   background-color: $btn-background-color;
-  height: 51px;
+  height: 50px;
   line-height: 51px;
   display: block;
   &:hover{

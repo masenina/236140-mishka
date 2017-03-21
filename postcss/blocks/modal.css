@@ -1,13 +1,38 @@
-.modal{
-  @mixin container;
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(256,256,256,0.95);
+
 }
+.modal--display{
+  display: block;
+}
+.modal__form {
+  @mixin container;
+  margin-top: 50%;
+  background-color: $base-bg-color;
+  border: 1px solid $items-border-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .modal__title{
   font-size: 25px;
   font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .modal__text{
   font-size: 15px;
+  margin: 20px 0;
 }
 
 .modal__label{
@@ -18,8 +43,14 @@
   display: flex;
   flex-direction: column;
 }
-
 .modal__items{
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.modal__btn{
+  margin: 50px 0;
+  width: 100%;
 }
