@@ -11,16 +11,15 @@
 .page-footer__social-link{
   width: 24px;
   height: 29px;
-
-  margin: 20px;
+  margin: 25px 17px;
   &--in{
-    background: url("/img/icon-insta.svg") no-repeat center center;
+    background: url("../img/icon-insta.svg") no-repeat center center;
   }
   &--fb{
-    background: url("/img/icon-fb.svg") no-repeat center center;
+    background: url("../img/icon-fb.svg") no-repeat center center;
   }
   &--tw{
-    background: url("/img/icon-twitter.svg") no-repeat center center;
+    background: url("../img/icon-twitter.svg") no-repeat center center;
   }
 }
 .page-footer__social-links{
@@ -32,13 +31,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 5px 0 10px 0;
 }
 .page-footer__copyright-text{
   font-size: 19px;
   font-weight: bold;
 }
 .page-footer__copyright-logo{
-  background: url("/img/logo-htmlacademy.svg");
+  background: url("../img/logo-htmlacademy.svg");
   width: 27px;
   height: 34px;
   display: block;

@@ -2,6 +2,7 @@
   @mixin container;
   color: $base-text-color-light;
   font-size: 15px;
+  margin: 25px auto 30px auto;
 }
 
 .product-item__title{
@@ -11,15 +12,19 @@
   margin: 0;
 }
 .product-item__desctiption{
-  margin: 25px 0;
+  margin: 25px 0 20px 0;
+  line-height: 23px;
 }
 .product-item__parameters{
-  height: 110px;
+  height: 120px;
   border-collapse: collapse;
   width: 100%;
   tr{
     border-bottom: solid 1px $items-border-color;
   }
+}
+.product-item__parameter-title{
+  width: 37%;
 }
 .product-item__product-of-week-label{
   color: $base-lightgreen-color;
@@ -32,13 +37,13 @@
   font-size: 17px;
   font-weight: bold;
   text-align: center;
-  margin: 28px 0;
+
 }
 .product-item__image{
-  margin: 28px 0;
+  margin: 28px 0 20px 0;
 }
 .product-item__order-button{
-  margin-bottom: 35px;
+  margin: 25px 0 35px 0;
 }
 
 

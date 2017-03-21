@@ -14,7 +14,7 @@
 }
 .about-us{
   @mixin container;
-  margin-top: 37px;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 .about-us__title{
@@ -45,6 +45,8 @@
 .about-us__text{
   font-size: 17px;
   font-weight: bold;
+  line-height: 20px;
+  margin: 15px 0 0 0;
 }
 @media (min-width: 768px){
   .about-us{
