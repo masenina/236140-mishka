@@ -105,28 +105,28 @@
   display: flex;
   flex-direction: column;
 
-a{
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  color: #000000;
-  padding-left: 45px;
-  @mixin container;
-  margin: auto;
-  box-sizing: border-box;
-  &:hover{
-    color: $base-color-hover;
-    path{
-      fill: $base-lightgreen-color;
+  a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+    padding-left: 45px;
+    @mixin container;
+    margin: auto;
+    box-sizing: border-box;
+    &:hover{
+      color: $base-color-hover;
+      path{
+        fill: $base-lightgreen-color;
+      }
+    }
+    &:active{
+      color: $base-color-down;
+      path{
+        fill: $base-lightgreen-active-color;
+      }
     }
   }
-  &:active{
-    color: $base-color-down;
-    path{
-      fill: $base-lightgreen-active-color;
-    }
-  }
-}
 }
 .page-header__free-delivery-text{
   display: none;
@@ -250,8 +250,8 @@ a{
     .page-header__menu-item-text {
       font-size: 0;
     }
-      border-left: 1px solid $items-border-color;
-      border-right: 1px solid $items-border-color;
+    border-left: 1px solid $items-border-color;
+    border-right: 1px solid $items-border-color;
   }
   .page-header__menu-item-icon{
     margin: 4px 26px auto 32px;
@@ -288,13 +288,13 @@ a{
   .page-header__caption {
     padding-top: 154px;
     h1{
-    font-size: 43px;
-    line-height: 50px;
-  }
-  &--regular-page{
-  margin-top: -70px;
-  background-color: $background-lightgray;
-  }
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &--regular-page{
+      margin-top: -70px;
+      background-color: $background-lightgray;
+    }
   }
   .page-header__groups{
     @mixin container;

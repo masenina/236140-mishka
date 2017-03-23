@@ -24,9 +24,9 @@
   line-height: 30px;
 }
 
-  .contacts__option:last-child .contacts__option-value{
-    padding-right: 12%;
-  }
+.contacts__option:last-child .contacts__option-value{
+  padding-right: 12%;
+}
 
 .contacts__option-title{
   vertical-align: top;
