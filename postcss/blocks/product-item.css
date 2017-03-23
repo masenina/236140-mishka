@@ -48,9 +48,13 @@
 
 
 @media (min-width: 768px){
+  .product-item{
+    margin-top: 45px;
+  }
   .product-item__title-section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .product-item__title{
     font-size: 43px;
@@ -58,6 +62,7 @@
   .product-item__product-of-week-label{
     width: 18%;
     text-align: center;
+    line-height: 17px;
   }
   .product-item__main-section {
     display: flex;
@@ -65,9 +70,10 @@
     flex-wrap: wrap;
     height: 404px;
     justify-content: space-between;
-    margin: 57px 0;
+    margin: 53px 0;
   }
   .product-item__image{
+    background: #f1f1f1;
     order: 1;
     width: 50%;
     margin: 0;
@@ -78,19 +84,24 @@
   }
   .product-item__info{
     width: 50%;
-    padding-right: 7%;
+    padding-right: 6%;
     box-sizing: border-box;
+
   }
   .product-item__desctiption{
     font-size: 17px;
-    margin: 0;
+    margin: -9px 0 37px 0;
+    line-height: 30px;
   }
-
+  .product-item__parameter-title{
+    width: 34%;
+  }
   .product-item__buy{
-    padding-right: 7%;
+    padding-right: 6%;
   }
   .product-item__price{
     font-size: 20px;
+    margin: 35px;
   }
   .product-item__order-button{
     margin: 0;
@@ -100,6 +111,7 @@
 @media (min-width: 1150px){
   .product-item{
     position: relative;
+    margin-top: 76px;
   }
   .product-item__main-section {
   height: 636px;
@@ -107,10 +119,10 @@
   .product-item__info {
   padding-left: 16.5%;
     padding-right: 5%;
-    margin-top: 160px;
+    margin-top: 165px;
   }
   .product-item__desctiption{
-    margin-bottom: 60px;
+    margin-bottom: 51px;
   }
   .product-item__buy{
     padding-left: 16.5%;
@@ -119,10 +131,14 @@
   .product-item__title-section{
     position: absolute;
     flex-direction: row-reverse;
-    top: 60px;
+    top: 45px;
+    left: 35px;
+  }
+  .product-item__product-of-week-label{
+    width: 95px;
   }
   .product-item__title{
     font-size: 53px;
-    margin-left: 35px;
+    margin-left: 42px;
   }
 }

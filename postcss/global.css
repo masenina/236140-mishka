@@ -1,20 +1,17 @@
 @font-face{
   font-family: "Open Sans";
-  src:
-    local("Open Sans"),
-    url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff");
+  src: url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
 }
 
 body{
   font-family: "Open Sans";
   min-width: 320px;
-
   background-color: $base-bg-color;
   margin: 0;
 }

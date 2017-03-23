@@ -1,10 +1,11 @@
 $background-lightgray: #f1f1f1;
-$background-logo-image: #f9f9f9;
+$background-logo-imagebackground-logo-image: #f9f9f9;
 $base-bg-color: #ffffff;
 $base-color-dark: #000000;
 $base-color-hover: #666666;
 $base-color-down: #b2b2b2;
 $base-lightgreen-color: #63d1bb;
+$base-lightgreen-active-color: #d0f1ea;
 $base-text-color-light: #444444;
 
 $interior-btn-color: #63d1bb;
@@ -25,6 +26,13 @@ $items-border-color: #ececec;
 
 $email-color: #62d1ba;
 $email-color-hover: #46c1ae;
-$email-color-active:  rgba(70, 193, 174, 0.5);
+$email-color-active:  #c7ece7;
+
+
+$img-color-hover: #46c1ae;
+$img-color-active:  #cae6e2;
+$text-color: #000000;
+$text-color-hover: #404040;
+$text-color-active: #a8a8a8;
 
 $form-color: #62d1ba;
