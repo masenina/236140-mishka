@@ -322,10 +322,14 @@
     &--interior {
       background-position: calc((100% + 220px) / 2) 50%;
       &:hover{
-        padding-bottom: 45px;
+        margin-top: -5px;
       }
     }
-
+    &--toy{
+      &:hover{
+        margin-top: -5px;
+      }
+    }
   }
 
 }
