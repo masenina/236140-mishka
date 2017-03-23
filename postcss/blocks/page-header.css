@@ -200,14 +200,23 @@
   .page-header__main-section{
     margin-top: -70px;
     background-size: cover;
-    height: 740px;
+    height: 755px;
     justify-content: space-between;
     border-top: 1px solid $items-border-color;
-    background-image: url("../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg"), url("../img/bg-zigzag-fill.jpg");
     background-position-y: 0;
   }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
     background-image: url("../img/hero-desktop@2x.jpg");
+  }
+  .page-header__bottom-wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url("../img/bg-zigzag-fill.svg") ;
+    background-repeat-x: repeat;
+    background-size: contain;
+    height: 17px;
   }
   .page-header__logo{
     width: 113px;
@@ -294,6 +303,8 @@
     &--regular-page{
       margin-top: -70px;
       background-color: $background-lightgray;
+      padding-top: 96px;
+      padding-bottom: 81px;
     }
   }
   .page-header__groups{
@@ -305,8 +316,8 @@
   }
 
   .page-header__group-text{
-    padding-top: 28px;
-    padding-bottom: 26px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     line-height: 30px;
     &--interior {
       background-position: calc((100% + 220px) / 2) 50%;
@@ -317,13 +328,13 @@
 
 @media (min-width: 1150px){
   .page-header__caption {
-    padding-top: 150px;
+    padding-top: 155px;
     h1{
       font-size: 53px;
       line-height: 57px;
     }
     &--regular-page{
-      padding: 94px 0;
+      padding: 94px 0 117px 0;
     }
   }
 
@@ -367,7 +378,7 @@
     order: 4;
   }
   .page-header__main-section{
-    height: 740px;
+    height: 764px;
     background-size: initial;
   }
 
@@ -375,8 +386,10 @@
     @mixin container;
   }
   .page-header__group-text{
-
-    padding-left: 7%;
+    padding: 28px 0 50px 7%;
     background-position: 93% 50%;
+  }
+  .page-header__bottom-wave{
+    height: 30px;
   }
 }

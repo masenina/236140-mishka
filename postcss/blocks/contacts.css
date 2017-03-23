@@ -1,5 +1,5 @@
 .contacts{
-  margin-top: 93px;
+  margin-top: 40px;
 }
 .contacts__main-section{
   @mixin container;
@@ -59,7 +59,7 @@
 }
 @media (min-width: 768px){
   .contacts{
-    margin-top: 132px;
+    margin-top: 44px;
   }
   .contacts__title-section{
     display: flex;
@@ -111,7 +111,7 @@
     height: 455px;
     padding: 0;
     margin-bottom: 105px;
-    margin-top: 160px;
+    margin-top: 72px;
   }
   .contacts__main-section{
     width: 525px;

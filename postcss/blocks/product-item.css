@@ -49,7 +49,7 @@
 
 @media (min-width: 768px){
   .product-item{
-    margin-top: 45px;
+    margin-top: 32px;
   }
   .product-item__title-section{
     display: flex;
@@ -111,7 +111,8 @@
 @media (min-width: 1150px){
   .product-item{
     position: relative;
-    margin-top: 76px;
+    margin-top: 50px;
+    margin-bottom: 72px;
   }
   .product-item__main-section {
     height: 636px;

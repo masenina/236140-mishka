@@ -58,7 +58,7 @@
 }
 @media (min-width: 768px){
   .reviews{
-    margin-top: 89px;
+    margin: 89px 0 70px 0;
     background: url("../img/review@1x.jpg") no-repeat 0 50%;
     background-size: auto 100%;
   }
@@ -102,7 +102,7 @@
 @media (min-width: 1150px){
   .reviews {
     @mixin container;
-    margin-bottom: 92px;
+    margin-bottom: 62px;
     margin-top: 92px;
   }
   .reviews__container {

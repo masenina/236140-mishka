@@ -70,7 +70,7 @@
 
 @media (min-width: 768px){
   .catalog-items{
-    margin-top: 80px;
+    margin-top: 73px;
   }
   .catalog-items__item{
     flex-direction: row;
@@ -110,11 +110,13 @@
   }
 }
 @media (min-width: 1150px){
+  .catalog-items{
+    margin-top: 110px;
+  }
   .catalog-items__list{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 130px;
   }
 
   .catalog-items__item{
@@ -129,7 +131,7 @@
     flex-basis: auto;
     box-sizing: border-box;
     flex-grow: 1;
-    padding: 22px 24px 24px 28px;
+    padding: 20px 24px 24px 28px;
   }
   .catalog-items__title{
     padding-right: 22px;
