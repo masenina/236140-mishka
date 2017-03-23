@@ -321,7 +321,11 @@
     line-height: 30px;
     &--interior {
       background-position: calc((100% + 220px) / 2) 50%;
+      &:hover{
+        padding-bottom: 45px;
+      }
     }
+
   }
 
 }
