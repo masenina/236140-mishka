@@ -1,21 +1,21 @@
 .custom-order{
-
   margin-bottom: 60px;
 }
+
 .custom-order__intro{
   @mixin container;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 32px;
   color: $base-text-color-light;
   font-size: 13px;
-  line-height: 30px;
+  line-height: 24px;
 }
 .custom-order__group{
   @mixin container;
   border: 0px;
   border-top: 1px solid $form-color;
   position: relative;
-  padding: 35px 0;
+  padding: 33px 0 20px 0;
   display: flex;
   &:nth-child(7){
     padding-bottom: 0;
@@ -34,26 +34,97 @@
   top: -12px;
   left: 0;
   background-color: $base-bg-color;
-  padding-right: 10px;
+  width: 62px;
 }
+
+
+.custom-order__items--color .custom-order__item{
+  margin-bottom: 25px;
+}
+.custom-order__checkbox{
+  display: none;
+}
+.custom-order__checkbox ~ .custom-order__label{
+  position: relative;
+  margin-left: 45px;
+  line-height: 36px;
+  padding-left: 18px;
+}
+.custom-order__checkbox ~ .custom-order__label::before{
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid $base-text-color-light;
+  position: absolute;
+  left: -44px;
+}
+.custom-order__checkbox:checked ~ .custom-order__label::before{
+  background: url("../img/icon-tick.svg")  no-repeat center center;
+  background-size: 24px;
+}
+/*-------------------*/
+.custom-order__radio{
+  display: none;
+}
+.custom-order__radio ~ .custom-order__label{
+  position: relative;
+  margin-left: 45px;
+  line-height: 36px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.custom-order__radio ~ .custom-order__label::before{
+  content: "";
+  width: 36px;
+  height: 36px;
+  border: 2px solid $base-text-color-light;
+  position: absolute;
+  left: -44px;
+  border-radius: 50%;
+}
+.custom-order__radio ~ .custom-order__label::after{
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -32px;
+  border-radius: 50%;
+  top: 6px;
+}
+.custom-order__radio:checked ~ .custom-order__label::after{
+  background: $form-color  no-repeat center center;
+  background-size: 24px;
+  display: block;
+
+}
+.custom-order__items--type .custom-order__item{
+  margin-bottom: 23px;
+}
+
 .custom-order__label{
   font-size: 17px;
   font-weight: bold;
   padding-right: 30px;
   &--active:hover{
     color: $base-color-hover;
+    &:before{
+      border-color: $form-color;
+    }
   }
   &--active:active{
     color: $base-color-down;
+    &:before{
+      border-color: #c7c7c7;
+    }
   }
-}
 
+}
 .custom-order__text{
   border: 0;
   font-size: 17px;
-  height: 40px;
+  height: 45px;
   width: 100%;
-  border-bottom: 1px solid $base-color-dark;
+  border-bottom: 2px solid $base-color-dark;
   &--tel{
     background: url("../img/icon-phone.svg") no-repeat right center;
   }
@@ -65,10 +136,11 @@
   width: 100%;
 }
 .custom-order__items--fio{
+  padding-bottom: 21px;
   .custom-order__item{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 19px;
     &:first-child{
       margin-top: 0;
     }

@@ -63,7 +63,9 @@
     background-size: auto 100%;
   }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
-    background-image: url("../img/review@2x.jpg");
+    .reviews {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
   .reviews__container {
     padding-top: 75px;

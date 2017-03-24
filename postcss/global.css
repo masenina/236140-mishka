@@ -121,3 +121,6 @@ body{
     height: 21px;
   }
 }
+input{
+  outline: none;
+}
