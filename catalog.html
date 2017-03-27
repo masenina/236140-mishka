@@ -147,11 +147,14 @@
       <img class="producing__title-img" src="img/icon-video.svg" width="39" height="33" alt="">
       <h3 class="producing__title">Процесс производства</h3>
     </div>
-    <picture>
-      <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-      <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-      <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Производство">
-    </picture>
+    <div class="producing__video-container">
+      <picture class="producing__video">
+        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+        <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Производство">
+      </picture>
+      <div class="producing__video__play-button"></div>
+    </div>
     <p class="producing__video-description">По просьбам наших любимых фоловверов мы сняли для вас подробное видео о том,
       как появляются наши товары</p>
     <button class="producing__order btn">Сделать заказ</button>

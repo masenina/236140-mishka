@@ -30,6 +30,12 @@
   align-items: center;
   border: 1px solid $background-lightgray;
   margin-bottom: 29px;
+  &:hover .catalog-items__item-desc{
+    box-shadow: 0px 6px 12px #eeeeee;
+  }
+  &:active .catalog-items__item-desc{
+    box-shadow: 0px 5px 10px #eeeeee;
+  }
 }
 .catalog-items__item-desc{
   width: 205px;

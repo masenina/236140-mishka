@@ -205,7 +205,7 @@
     height: 755px;
     justify-content: space-between;
     border-top: 1px solid $items-border-color;
-    background-image: url("../img/hero-desktop@1x.jpg"), url("../img/bg-zigzag-fill.jpg");
+    background-image: url("../img/hero-desktop@1x.jpg"), url("../img/bg-zigzag-fill.svg");
     background-position-y: 0;
   }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
