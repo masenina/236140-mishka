@@ -1,48 +1,64 @@
 .page-footer{
   background-color: $background-lightgray;
-
 }
 .page-footer__container{
   @mixin container;
 }
 .page-footer__logo{
   display: none;
+  a:hover path{
+    fill: $img-color-hover;
+  }
+  a:active path{
+    fill: $img-color-active;
+  }
 }
 .page-footer__social-link{
-  width: 24px;
-  height: 29px;
-  margin: 25px 17px;
-  &--in{
-    background: url("../img/icon-insta.svg") no-repeat center center;
+  margin: 23px 20px;
+  &:hover path{
+    fill: $img-color-hover;
   }
-  &--fb{
-    background: url("../img/icon-fb.svg") no-repeat center center;
-  }
-  &--tw{
-    background: url("../img/icon-twitter.svg") no-repeat center center;
+  &:active path{
+    fill: $img-color-active;
   }
 }
 .page-footer__social-links{
-  border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
 }
 .page-footer__copyright{
   display: flex;
   justify-content: center;
+  padding: 7px 0 10px 0;
   align-items: center;
-  padding-top: 5px 0 10px 0;
+  text-decoration: none;
+  color: $text-color;
 }
 .page-footer__copyright-text{
+  margin-right: 30px;
   font-size: 19px;
   font-weight: bold;
 }
+.page-footer__copyright:hover {
+  color: $text-color-hover;
+  path{
+    fill: $img-color-hover;
+  }
+}
+.page-footer__copyright:active{
+  color: $text-color-active;
+  path{
+    fill: $img-color-active;
+  }
+}
 .page-footer__copyright-logo{
-  background: url("../img/logo-htmlacademy.svg");
-  width: 27px;
-  height: 34px;
   display: block;
   margin-left: 25px;
+  width: 27px;
+  height: 34px;
+  background: url("../img/logo-htmlacademy.svg");
 }
 
 @media (min-width: 768px) {
@@ -51,8 +67,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 32px;
+    padding-bottom: 30px;
   }
   .page-footer__logo{
     display: block;
@@ -62,10 +78,11 @@
     border: none;
   }
   .page-footer__logo{
-    flex-basis: 34%;
+    flex-basis: 33%;
   }
   .page-footer__copyright{
     flex-basis: 33%;
     justify-content: flex-end;
+    padding-top: 12px;
   }
 }
