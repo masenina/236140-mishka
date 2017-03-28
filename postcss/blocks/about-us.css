@@ -16,32 +16,28 @@
   font-size: 25px;
   font-weight: bold;
 }
-
 .about-us__image{
   width: 55px;
   height: 38px;
   background-color: white;
   background-repeat: no-repeat;
   background-position: center top;
-  background-position: center top;
 }
-
 .about-us__items{
   padding: 0;
   margin: 0;
 }
-
 .about-us__item{
-  list-style-type: none;
   margin-top: 30px;
+  list-style-type: none;
 }
-
 .about-us__text{
+  margin: 15px 0 0 0;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
-  margin: 15px 0 0 0;
 }
+
 @media (min-width: 768px){
   .about-us{
     margin-top: 42px;
@@ -49,14 +45,14 @@
   }
   .about-us__item{
     width: 50%;
-    margin-top: 62px;
     padding-right: 30px;
+    margin-top: 62px;
     box-sizing: border-box;
   }
   .about-us__items{
-    margin-top: -15px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: -15px;
   }
   .about-us__title{
     font-size: 43px;
@@ -69,10 +65,9 @@
   .about-us{
     padding-left: 175px;
     padding-right: 175px;
+    margin-top: 54px;
     box-sizing: border-box;
-    margin-top: 51px;
   }
-
   .about-us__title{
     font-size: 53px;
   }

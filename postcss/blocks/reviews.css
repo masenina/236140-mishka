@@ -8,22 +8,21 @@
   flex-direction: column;
 }
 .reviews__title{
+  margin: 0;
   font-size: 25px;
   font-weight: bold;
-  margin: 0;
-
 }
 .reviews__item{
   margin: 25px 0 22px 0;
-  line-height: 30px;
   font-size: 14.5px;
+  line-height: 30px;
 }
 .reviews__arrow-btn{
   width: 50%;
   height: 50px;
-  border: 1px solid $items-border-color;
   padding:0;
   background-color: $base-bg-color;
+  border: 1px solid $items-border-color;
   outline: none;
   &:hover{
     polygon{
@@ -47,14 +46,14 @@
   font-size: 17px;
   font-weight: normal;
 }
-.reviews__nav {
-  margin-top: 30px;
+.reviews__nav{
   display: flex;
+  margin-top: 30px;
 }
 .reviews__write{
-  width: 100%;
   order: 1;
-  margin-top: 35px;
+  width: 100%;
+  margin-top: 38px;
 }
 @media (min-width: 768px){
   .reviews{
@@ -63,16 +62,16 @@
     background-size: auto 100%;
   }
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx){
-    .reviews {
+    .reviews{
       background-image: url("../img/review@2x.jpg");
     }
   }
-  .reviews__container {
-    padding-top: 75px;
-    padding-bottom: 45px;
+  .reviews__container{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    padding-top: 75px;
+    padding-bottom: 45px;
   }
   .reviews__write{
     order: 0;
@@ -83,41 +82,41 @@
   .reviews__title{
     font-size: 43px;
   }
-  .reviews__item {
-    font-size: 17px;
+  .reviews__item{
     margin-top: 41px;
     margin-bottom: 56px;
+    font-size: 17px;
   }
   .reviews__author{
     display: flex;
     flex-direction: column;
   }
   .reviews__nav{
-    margin-left: auto;
     flex-basis: 26%;
+    margin-left: auto;
     margin-top: 0;
   }
-  .reviews__arrow-btn {
+  .reviews__arrow-btn{
     border: none;
   }
 }
 @media (min-width: 1150px){
-  .reviews {
+  .reviews{
     @mixin container;
-    margin-bottom: 62px;
+    margin-bottom: 70px;
     margin-top: 92px;
   }
-  .reviews__container {
+  .reviews__container{
+    width: 100%;
     padding-left: 16.5%;
     padding-bottom: 96px;
-    padding-top: 62px;
-    width: 100%;
+    padding-top: 64px;
     box-sizing: border-box;
   }
   .reviews__title{
     font-size: 53px;
   }
-  .reviews__item {
+  .reviews__item{
     width: 90%;
     margin-top: 41px;
     margin-bottom: 36px;

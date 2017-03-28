@@ -4,21 +4,21 @@
 
 .custom-order__intro{
   @mixin container;
-  box-sizing: border-box;
-  margin-top: 21px;
-  margin-bottom: 31px;
   padding-right: 10px;
+  margin-top: 21px;
+  margin-bottom: 33px;
+  box-sizing: border-box;
   color: $base-text-color-light;
   font-size: 13px;
   line-height: 24px;
 }
 .custom-order__group{
   @mixin container;
+  position: relative;
+  display: flex;
+  padding: 32px 0 21px 0;
   border: 0px;
   border-top: 1px solid $form-color;
-  position: relative;
-  padding: 32px 0 19px 0;
-  display: flex;
   &:nth-child(7){
     padding-bottom: 0;
   }
@@ -28,21 +28,19 @@
   margin-top: 8px;
 }
 .custom-order__group-title{
+  position: absolute;
+  top: -12px;
+  display: block;
+  width: 62px;
   font-size: 17px;
   font-weight: bold;
   color: $form-color;
   text-transform: uppercase;
-  display: block;
-  position: absolute;
-  top: -12px;
   left: 0;
   background-color: $base-bg-color;
-  width: 62px;
 }
-
-
 .custom-order__items--color .custom-order__item{
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 .custom-order__checkbox{
   display: none;
@@ -50,64 +48,62 @@
 .custom-order__checkbox ~ .custom-order__label{
   position: relative;
   margin-left: 45px;
-  line-height: 43px;
   padding-left: 18px;
+  line-height: 43px;
 }
 .custom-order__checkbox ~ .custom-order__label::before{
   content: "";
+  position: absolute;
+  left: -44px;
   width: 36px;
   height: 36px;
   border: 2px solid $base-text-color-light;
-  position: absolute;
-  left: -44px;
 }
 .custom-order__checkbox:checked ~ .custom-order__label::before{
   background: url("../img/icon-tick.svg")  no-repeat center center;
   background-size: 24px;
 }
-/*-------------------*/
 .custom-order__radio{
   display: none;
 }
 .custom-order__radio ~ .custom-order__label{
   position: relative;
-  line-height: 18px;
   padding-left: 62px;
   padding-top: 9px;
+  line-height: 18px;
 }
 .custom-order__radio ~ .custom-order__label::before{
   content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 36px;
   height: 36px;
   border: 2px solid $base-text-color-light;
-  position: absolute;
   border-radius: 50%;
-  left: 0;
-  top: 0;
 }
 .custom-order__radio ~ .custom-order__label::after{
   content: "";
+  position: absolute;
+  left: 11px;
+  top: 11px;
   width: 16px;
   height: 16px;
-  position: absolute;
-  left: 12px;
   border-radius: 50%;
-  top: 12px;
   background-size: 24px;
 }
 .custom-order__radio:checked ~ .custom-order__label::after{
   background: $form-color  no-repeat center center;
 }
 .custom-order__items--type .custom-order__item{
-  margin-bottom: 20px;
-  height: 40px;
   display: flex;
+  height: 40px;
+  margin-bottom: 20px;
 }
-
 .custom-order__label{
+  padding-right: 30px;
   font-size: 17px;
   font-weight: bold;
-  padding-right: 30px;
   &--active:hover{
     color: $base-color-hover;
     &:before{
@@ -123,18 +119,32 @@
 
 }
 .custom-order__text{
-  border: 0;
-  font-size: 17px;
   height: 45px;
   width: 100%;
-  border-bottom: 2px solid $base-color-dark;
   font-family: "Open Sans";
-  &--tel{
-    background: url("../img/icon-phone.svg") no-repeat 97% center;
+  font-size: 17px;
+  border: 0;
+  border-bottom: 2px solid $base-color-dark;
+  background-color: inherit;
+  &:hover{
+    border-color: $form-color;
+    & ~ svg path{
+      fill: $form-color;
+    }
   }
-  &--email{
-    background: url("../img/icon-mail.svg") no-repeat 99% center;
+  &:focus{
+    border-color: $form-color;
+    & ~ svg path{
+      fill: $form-color;
+    }
   }
+}
+
+
+.custom-order__bg-icon{
+  position: absolute;
+  right: 7px;
+  top: 23px;
 }
 .custom-order__items{
   width: 100%;
@@ -171,13 +181,20 @@
   margin: 0;
 }
 .custom-order__textarea{
-  border: 1px solid $base-color-dark;
   width: 100%;
+  box-sizing: border-box;
+  font-family: "Open Sans";
   font-size: 17px;
   line-height: 18px;
   padding: 15px;
-  box-sizing: border-box;
-  font-family: "Open Sans";
+  border: 1px solid $base-color-dark;
+  outline: none;
+  &:hover{
+    border-color: $form-color;
+  }
+  &:focus{
+    border-color: $form-color;
+  }
 }
 
 .custom-order__notice{
@@ -185,7 +202,7 @@
   color: $base-text-color-light;
 }
 .custom-order__submit-button{
-  width:100%;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -197,23 +214,22 @@
   .custom-order__group{
     flex-direction: row;
     align-items: baseline;
-    padding: 60px 0;
-    border: none;
     padding:0;
+    border: none;
   }
   .custom-order__bg-wrapper{
     padding: 63px 0 13px 0;
   }
-  .custom-order__bg-wrapper--odd {
+  .custom-order__bg-wrapper--odd{
     background-color: $background-lightgray;
-    .custom-order__group-title {
+    .custom-order__group-title{
       background-color: inherit;
     }
   }
   .custom-order__intro{
-    font-size: 17px;
     margin-top: 64px;
     margin-bottom: 6px;
+    font-size: 17px;
     line-height: 30px;
   }
   .custom-order__radio ~ .custom-order__label{
@@ -221,25 +237,25 @@
     padding-top: 2px;
   }
   .custom-order__radio ~ .custom-order__label::before{
+    top: -13px;
     width: 48px;
     height: 48px;
-    top: -13px;
   }
   .custom-order__checkbox ~ .custom-order__label{
-    line-height: 18px;
     padding-left: 36px;
+    line-height: 18px;
   }
   .custom-order__radio ~ .custom-order__label::after{
-    width: 20px;
-    height: 20px;
     left: 16px;
     top: 3px;
+    width: 20px;
+    height: 20px;
   }
   .custom-order__checkbox ~ .custom-order__label::before{
-    width: 50px;
-    height: 48px;
     left: -45px;
     top: -11px;
+    width: 50px;
+    height: 48px;
   }
   .custom-order__checkbox:checked ~ .custom-order__label::before{
     background-size: 33px;
@@ -248,23 +264,22 @@
     margin-bottom: 36px;
   }
   .custom-order__items--color .custom-order__item{
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
   .custom-order__group-title{
     position: static;
     flex-basis: 25%;
     padding: 0;
   }
-
   .custom-order__label{
-    font-size: 19px;
     padding-right: 25px;
+    font-size: 19px;
   }
   .custom-order__text{
-    font-size: 19px;
     height: initial;
     padding-bottom: 12px;
     padding-left: 16px;
+    font-size: 19px;
   }
   .custom-order__items--fio{
     margin-top: -3px;
@@ -276,17 +291,18 @@
     margin-bottom: 34px;
     padding-bottom: 12px;
     box-sizing: border-box;
-    background-position: 95% top;
   }
   .custom-order__text--email{
     flex-basis: 75%;
-    box-sizing: border-box;
     padding-left: 16px;
     padding-bottom: 12px;
-    background-position: 95% top;
     margin-bottom: 36px;
+    box-sizing: border-box;
   }
-
+  .custom-order__bg-icon{
+    right: 24px;
+    top: 0px;
+  }
   .custom-order__items{
     width: 501px;
     &--fio{
@@ -310,8 +326,8 @@
     }
   }
   .custom-order__textarea{
-    font-size: 19px;
     flex-basis: 75%;
+    font-size: 19px;
   }
   .custom-order__group--additional{
     display: flex;
@@ -322,7 +338,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 40px;
+    margin-top: 44px;
   }
   .custom-order__submit-button{
     width: 230px;
@@ -335,6 +351,9 @@
 }
 
 @media (min-width: 1150px){
+  .custom-order{
+    margin-bottom: 51px;
+  }
   .custom-order__group{
     justify-content: space-between;
   }
@@ -354,39 +373,40 @@
     margin-top: 102px;
     box-sizing: border-box;
   }
-  .custom-order__items--color {
+  .custom-order__items--color{
     justify-content: flex-start;
-    .custom-order__item {
+    .custom-order__item{
       flex-basis: 30%;
     }
   }
   .custom-order__items--fio .custom-order__text{
-      margin-right: 175px;
+    margin-right: 175px;
   }
   .custom-order__group{
     justify-content: flex-start;
   }
   .custom-order__group--email{
     .custom-order__group-title{
-      box-sizing: border-box;
       padding-left: 15px;
+      box-sizing: border-box;
     }
   }
-  .custom-order__text--tel {
+  .custom-order__text--tel{
     flex-basis: 66.6%;
-    background-position-x: 99%;
     margin-bottom: 38px;
   }
-  .custom-order__text--email {
+  .custom-order__text--email{
     flex-basis: 66.6%;
-    background-position-x: 99%;
+  }
+  .custom-order__bg-icon{
+    right: 182px;
   }
   .custom-order__textarea{
     flex-basis: 66.6%;
   }
   .custom-order__bottom-section{
     margin: auto;
-    width: 55.6%;
-    margin-top: 52px;
+    width: 700px;
+    margin-top: 37px;
   }
 }

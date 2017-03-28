@@ -1,6 +1,5 @@
 .page-footer{
   background-color: $background-lightgray;
-
 }
 .page-footer__container{
   @mixin container;
@@ -24,26 +23,24 @@
   }
 }
 .page-footer__social-links{
-  border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  border-bottom: 1px solid #e5e5e5;
 }
 .page-footer__copyright{
-  text-decoration: none;
-  color: $text-color;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 7px 0 10px 0;
+  align-items: center;
+  text-decoration: none;
+  color: $text-color;
 }
 .page-footer__copyright-text{
+  margin-right: 30px;
   font-size: 19px;
   font-weight: bold;
-  margin-right: 30px;
 }
-
 .page-footer__copyright:hover {
   color: $text-color-hover;
   path{
@@ -57,11 +54,11 @@
   }
 }
 .page-footer__copyright-logo{
-  background: url("../img/logo-htmlacademy.svg");
-  width: 27px;
-  height: 34px;
   display: block;
   margin-left: 25px;
+  width: 27px;
+  height: 34px;
+  background: url("../img/logo-htmlacademy.svg");
 }
 
 @media (min-width: 768px) {

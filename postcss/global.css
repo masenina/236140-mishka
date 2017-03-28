@@ -1,126 +1,75 @@
 @font-face{
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff") format("woff");
-  font-weight: bold;
-}
-
-body{
-  font-family: "Open Sans";
-  min-width: 320px;
-  background-color: $base-bg-color;
-  margin: 0;
-}
-
-.btn{
-  border: 2px solid $btn-text-color;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 17px;
-  color: $btn-text-color;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: $btn-background-color;
-  height: 50px;
-  line-height: 51px;
-  display: block;
-  &:hover{
-    background-color: $btn-background-color-reverse;
-    color: $btn-text-color-reverse;
-  }
-  &:active{
-    background-color: $btn-background-color-reverse;
-    color: $btn-text-color-active;
-  }
-  &--teal{
-    background-color: $interior-btn-color;
-    border: 1px solid $interior-btn-color;
-    color: $group-btn-text-color;
-  }
-}
-
-.section-saparator{
-  background: url(../img/bg-zigzag-line.svg);
-  background-repeat-x: repeat;
-  background-size: contain;
-  height: 7px;
-}
-@media (min-width: 768px) {
-  .section-saparator {
-    height: 17px;
-  }
-}
-@media (min-width: 1150px){
-  .section-saparator {
-    height: 23px;
-  }
+  src: url("../fonts/opensans.woff2") format("woff2");
 }
 
 @font-face{
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2");
   font-weight: bold;
 }
-
 body{
-  font-family: "Open Sans";
   min-width: 320px;
-  background-color: $base-bg-color;
   margin: 0;
+  font-family: "Open Sans";
+  background-color: $base-bg-color;
 }
 
 .btn{
-  border: 2px solid $btn-text-color;
-  text-decoration: none;
+  display: block;
+  height: 50px;
   font-weight: bold;
   font-size: 17px;
   color: $btn-text-color;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
-  background-color: $btn-background-color;
-  height: 50px;
   line-height: 51px;
-  display: block;
+  background-color: $ btn-background-color;
+  border: 2px solid $btn-text-color;
+  outline: none;
   &:hover{
-    background-color: $btn-background-color-reverse;
     color: $btn-text-color-reverse;
+    background-color: $btn-background-color-reverse;
   }
   &:active{
-    background-color: $btn-background-color-reverse;
     color: $btn-text-color-active;
+    background-color: $btn-background-color-reverse;
   }
-  &--teal{
+}
+.btn--teal{
+  color: $group-btn-text-color;
     background-color: $interior-btn-color;
     border: 1px solid $interior-btn-color;
-    color: $group-btn-text-color;
+  &:hover{
+    color: $group-btn-text-color-hover;
+    background-color: $interior-btn-color-active;
+  }
+  &:active{
+    color: $group-btn-text-color-hover;
+    background-color: $interior-btn-color-active;
   }
 }
 
 .section-saparator{
-  background: url(../img/bg-zigzag-line.svg)s;
+  height: 7px;
+  background: url(../img/bg-zigzag-line.svg);
   background-repeat-x: repeat;
   background-size: contain;
-  height: 7px;
 }
-@media (min-width: 768px) {
-  .section-saparator {
+@media (min-width: 768px){
+  .section-saparator{
     height: 17px;
   }
 }
 @media (min-width: 1150px){
-  .section-saparator {
-    height: 21px;
+  .section-saparator{
+    height: 20px;
   }
 }
 input{
+  outline: none;
+}
+button{
   outline: none;
 }

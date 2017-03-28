@@ -279,25 +279,27 @@
 </footer>
 
 <div class="modal">
-  <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="modal__title">Добавить в корзину</div>
-    <div class="modal__text">Выберите размер:</div>
-    <div class="modal__items">
-      <div class="modal_utem">
-        <input class="modal__radio" type="radio" name="size" id="size_small" value="small">
-        <label class="modal__label" for="size_small">S</label>
+  <div class="modal__container">
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal__title">Добавить в корзину</div>
+      <div class="modal__text">Выберите размер:</div>
+      <div class="modal__items">
+        <div class="modal_utem">
+          <input class="modal__radio" type="radio" name="size" id="size_small" value="small">
+          <label class="modal__label" for="size_small">S</label>
+        </div>
+        <div class="modal_utem">
+          <input class="modal__radio" type="radio" name="size" id="size__medium" value="medium">
+          <label class="modal__label" for="size__medium">M</label>
+        </div>
+        <div class="modal_utem">
+          <input class="modal__radio" type="radio" name="size" id="size__large" value="large">
+          <label class="modal__label" for="size__large">L</label>
+        </div>
       </div>
-      <div class="modal_utem">
-        <input class="modal__radio" type="radio" name="size" id="size__medium" value="medium">
-        <label class="modal__label" for="size__medium">M</label>
-      </div>
-      <div class="modal_utem">
-        <input class="modal__radio" type="radio" name="size" id="size__large" value="large">
-        <label class="modal__label" for="size__large">L</label>
-      </div>
-    </div>
-    <button type="submit" class="modal__btn btn--teal">Добавить</button>
-  </form>
+      <button type="submit" class="modal__btn btn btn--teal">Добавить</button>
+    </form>
+  </div>
 </div>
 
 
