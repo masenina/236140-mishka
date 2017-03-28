@@ -100,7 +100,7 @@
     justify-content: space-between;
     flex-basis: 50%;
     box-sizing: border-box;
-     padding: 25px;
+    padding: 25px;
   }
   .catalog-items__order{
     display: flex;

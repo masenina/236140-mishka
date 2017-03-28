@@ -40,7 +40,7 @@
   background: url("../img/icon-play.svg");
   background-size: 100%;
   &:hover{
-     transform: scale(1.2);
+    transform: scale(1.2);
   }
   &:active{
     transform: scale(0.8);
