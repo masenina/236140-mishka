@@ -1,5 +1,4 @@
 .catalog-items{
-.catalog-items{
   @mixin container;
   margin-top: 28px;
 }
