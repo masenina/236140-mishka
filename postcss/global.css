@@ -11,7 +11,7 @@
 body{
   min-width: 320px;
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   background-color: $base-bg-color;
 }
 
@@ -25,7 +25,7 @@ body{
   text-decoration: none;
   text-align: center;
   line-height: 51px;
-  background-color: $ btn-background-color;
+  background-color: $btn-background-color;
   border: 2px solid $btn-text-color;
   outline: none;
   &:hover{

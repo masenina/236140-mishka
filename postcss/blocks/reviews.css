@@ -25,13 +25,13 @@
   border: 1px solid $items-border-color;
   outline: none;
   &:hover{
-    polygon{
+    svg{
       fill: $base-color-hover;
     }
   }
   &:active{
-    polygon{
-      fill: #e2e2e2;
+    svg{
+      fill: #b2b2b2;
     }
   }
 }

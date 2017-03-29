@@ -102,7 +102,7 @@
   height: 79px;
   list-style-type: none;
   border-bottom: 1px solid $items-border-color;
-  a{
+  a {
     @mixin container;
     padding-left: 45px;
     margin: auto;
@@ -113,18 +113,22 @@
     color: #000000;
     &:hover{
       color: $base-color-hover;
-      path{
+      .page-header__menu-item-icon{
         fill: $base-lightgreen-color;
       }
     }
     &:active{
       color: $base-color-down;
-      path{
+      .page-header__menu-item-icon{
         fill: $base-lightgreen-active-color;
       }
     }
   }
 }
+.page-header__menu-item-icon{
+  fill: #d3d2d2;
+}
+
 .page-header__free-delivery-text{
   display: none;
   font-size: 15px;

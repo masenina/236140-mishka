@@ -58,10 +58,10 @@
 .catalog-items__bucket-icon{
   border: none;
   background: none;
-  &:hover path{
+  &:hover svg{
     fill: $base-lightgreen-color;
   }
-  &:active path{
+  &:active svg{
     fill: $base-lightgreen-active-color;
   }
 }
