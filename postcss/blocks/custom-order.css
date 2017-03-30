@@ -121,7 +121,7 @@
 .custom-order__text{
   height: 45px;
   width: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 17px;
   border: 0;
   border-bottom: 2px solid $base-color-dark;
@@ -183,7 +183,7 @@
 .custom-order__textarea{
   width: 100%;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 17px;
   line-height: 18px;
   padding: 15px;
