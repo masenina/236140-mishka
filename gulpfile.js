@@ -27,7 +27,7 @@ gulp.task("style", function() {
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
-   // .pipe(server.stream());
+    // .pipe(server.stream());
 });
 
 gulp.task("images", function() {
