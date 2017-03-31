@@ -263,13 +263,6 @@
   .page-header__menu-item-icon{
     margin: 4px 26px auto 32px;
   }
-  .page-header__menu-item--cart{
-    flex-grow: 1;
-    a{
-      padding-left: 82px;
-      background-position: 33px center;
-    }
-  }
   .page-header__menu--main{
     order: 1;
     flex-basis: 50%;
