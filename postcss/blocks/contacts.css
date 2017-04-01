@@ -24,10 +24,6 @@
   line-height: 30px;
 }
 
-.contacts__option:last-child .contacts__option-value{
-  padding-right: 12%;
-}
-
 .contacts__option-title{
   margin-right: 30px;
   vertical-align: top;
@@ -129,8 +125,14 @@
     padding-left: 33%;
   }
   .contacts__option{
-    flex-basis: 50%;
+    flex-basis: auto;
     align-self: flex-start;
+  }
+  .contacts__option-value{
+    width: 240px;
+  }
+  .contacts__option-value--email{
+    width: auto;
   }
   .contacts__map{
     order: 1;

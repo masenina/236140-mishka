@@ -121,7 +121,7 @@
   .catalog-items__item{
     flex-direction: column;
     width: 316px;
-    height: initial;
+    height: 663px;
     margin: 0;
   }
   .catalog-items__item-desc{
