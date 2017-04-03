@@ -43,6 +43,7 @@
 }
 .product-item__order-button{
   margin: 28px 0 35px 0;
+  width: 100%;
 }
 
 @media (min-width: 768px){
