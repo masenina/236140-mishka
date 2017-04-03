@@ -102,9 +102,8 @@
 }
 @media (min-width: 1150px){
   .reviews{
-    @mixin container;
-    margin-bottom: 70px;
-    margin-top: 92px;
+    width: 1050px;
+    margin: 92px auto 70px auto;
   }
   .reviews__container{
     width: 100%;

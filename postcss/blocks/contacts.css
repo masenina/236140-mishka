@@ -93,14 +93,13 @@
 
 @media (min-width: 1150px){
   .contacts{
-    @mixin container;
+    width: 1050px;
+    margin: 72px auto 105px auto ;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 455px;
     padding: 0;
-    margin-bottom: 105px;
-    margin-top: 72px;
   }
   .contacts__main-section{
     width: 525px;
