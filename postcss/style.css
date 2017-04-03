@@ -8,6 +8,8 @@
 @import "blocks/modal.css";
 @import "blocks/page-footer.css";
 @import "blocks/page-header.css";
+@import "blocks/main-nav.css";
+@import "blocks/logo.css";
 @import "blocks/producing.css";
 @import "blocks/product-item.css";
 @import "blocks/reviews.css";
